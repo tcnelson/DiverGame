@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
-var speed : float = 6f;            // The speed that the player will move at.
+var speed : float;            // The speed that the player will move at.
 
-private var movement : Vector2;    // The vector to store the direction of the player's movement.
+private var movement : Vector2;    					// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;          // Reference to the player's rigidbody.
 
 function Start () {
@@ -33,4 +33,8 @@ function Move (h : float, v : float)
 
     // Move the player to it's current position plus the movement. 	
     playerRigidbody.MovePosition (transform.position + movement);
+}
+
+function OnCollisionEnter2D(coll: Collision2D)
+{
 }
