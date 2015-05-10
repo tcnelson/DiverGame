@@ -33,7 +33,7 @@ function FixedUpdate ()
     // Move the player around the scene.
     Move (h, v);
     
-    // Decrease o2 over time
+    // Decrease hp over time
     currentHealth -= ( 1 * Time.deltaTime );
     healthSlider.value = currentHealth;
 }
@@ -48,6 +48,11 @@ function Move (h : float, v : float)
 
     // Move the player to it's current position plus the movement. 	
     playerRigidbody.MovePosition (transform.position + movement);
+    
+    // Movement consumes hp
+    if (movement.x != 0 || movement.y != 0) {
+    	currentHealth -= ( 10 * Time.deltaTime );
+    }
 }
 
 public function TakeDamage (amount : float)
