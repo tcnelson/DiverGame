@@ -4,7 +4,7 @@ var target : GameObject;
 var minDistance : float;
 var followDistance : float;
 
-private var offset : Vector3
+private var offset : Vector3;
 
 function Start () {
 	offset = transform.position - target.transform.position;
