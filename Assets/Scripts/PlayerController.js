@@ -6,6 +6,12 @@ var startingHealth : float = 100;				// start health/oxygen
 var currentHealth : float;						// current health/oxygen
 var healthSlider : UnityEngine.UI.Slider;       // Reference to the UI's health bar.
 
+var shot : GameObject;							// Reference to the shot game object that the player fires
+var shotSpawn : Transform;						// Where the shot spawns
+var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
+
+private var nextFire : float;					// When the next shot can be fired
+
 private var movement : Vector2;    				// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;      // Reference to the player's rigidbody.
 
@@ -18,10 +24,19 @@ function Awake() {
 
 function Start () {
 	playerRigidbody = GetComponent (Rigidbody2D);
+	
+	// Get the player's transform to use as location for spawning shot
+	shotSpawn = GetComponent (Transform);
 }
 
 function Update () {
-
+	  
+	  // Fire shot at rate set in unity
+	  if (Input.GetButton("Fire1") && Time.time > nextFire)
+    {
+        nextFire = Time.time + fireRate;
+        Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+    }
 }
 
 function FixedUpdate ()

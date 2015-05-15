@@ -516,6 +516,9 @@ MonoBehaviour:
   startingHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 1884681327}
+  shot: {fileID: 131254, guid: 5d659b44d79f64ca7935715eeff7036b, type: 2}
+  shotSpawn: {fileID: 0}
+  fireRate: .5
 --- !u!50 &1020454054
 Rigidbody2D:
   m_ObjectHideFlags: 0
