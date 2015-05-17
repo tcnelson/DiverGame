@@ -19,6 +19,8 @@ private var playerRigidbody : Rigidbody2D;      // Reference to the player's rig
 private var isDead : boolean;                   // Whether the player is dead.
 private var damaged : boolean;                  // True when the player gets damaged.
 
+private var directionFacing : Vector2;			// The direction the player is facing
+
 function Awake() {
 	currentHealth = startingHealth;
 }
@@ -26,8 +28,13 @@ function Awake() {
 function Start () {
 	playerRigidbody = GetComponent (Rigidbody2D);
 	
-	// Get the player's transform to use as location for spawning shot
-	shotSpawn = GetComponent (Transform);
+	// Get location for spawning shot
+	for (var child in GetComponentsInChildren (Transform)) {
+		if (child.tag == "ShotSpawn") {
+			shotSpawn = child as Transform; 
+			break;
+		}
+	}
 }
 
 function Update () {
@@ -48,12 +55,28 @@ function FixedUpdate ()
     var h : float = Input.GetAxisRaw ("Horizontal");
     var v : float = Input.GetAxisRaw ("Vertical");
 
+    // Check the direction the player is facing.
+    CheckDirection (h, v);
+    
     // Move the player around the scene.
     Move (h, v);
     
     // Decrease hp over time
     currentHealth -= ( 1 * Time.deltaTime );
     healthSlider.value = currentHealth;
+}
+
+function CheckDirection (h : float, v : float) {
+	// calculate angle between up and movement directions
+	// use cross product to determine angle clockwise-ness
+	var angle = Vector2.Angle(new Vector2(0, 1), new Vector2(h, v));
+	var cross = Vector3.Cross(new Vector2(0, 1), new Vector2(h, v));
+	if (cross.z < 0){
+		angle = 360 - angle;
+	}
+	
+	// rotate shotspawn about blue axis
+	shotSpawn.rotation = Quaternion.Euler(0, 0, angle);
 }
 
 function Move (h : float, v : float)
