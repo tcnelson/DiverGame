@@ -519,6 +519,7 @@ MonoBehaviour:
   shot: {fileID: 131254, guid: 5d659b44d79f64ca7935715eeff7036b, type: 2}
   shotSpawn: {fileID: 0}
   fireRate: .5
+  shotSpeed: 10000
 --- !u!50 &1020454054
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -822,7 +823,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 2061187866}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2

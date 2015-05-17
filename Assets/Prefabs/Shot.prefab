@@ -11,8 +11,7 @@ GameObject:
   - 212: {fileID: 21228740}
   - 50: {fileID: 5088918}
   - 61: {fileID: 6123382}
-  - 114: {fileID: 11444464}
-  - 114: {fileID: 11495370}
+  - 114: {fileID: 11411970}
   m_Layer: 0
   m_Name: Shot
   m_TagString: Untagged
@@ -60,7 +59,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .319999993, y: .319999993}
---- !u!114 &11444464
+--- !u!114 &11411970
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -68,19 +67,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 131254}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91449130aa6c842a39f6d4369742ec8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 200
---- !u!114 &11495370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 131254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0058c89cabed4bd1afa556a253a2f7c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e657e793d0544fc19e22c7c0e7ecfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &21228740
