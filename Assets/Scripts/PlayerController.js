@@ -9,6 +9,7 @@ var healthSlider : UnityEngine.UI.Slider;       // Reference to the UI's health 
 var shot : GameObject;							// Reference to the shot game object that the player fires
 var shotSpawn : Transform;						// Where the shot spawns
 var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
+var shotSpeed : float;							// The speed at which the shot clone will move
 
 private var nextFire : float;					// When the next shot can be fired
 
@@ -35,7 +36,9 @@ function Update () {
 	  if (Input.GetButton("Fire1") && Time.time > nextFire)
     {
         nextFire = Time.time + fireRate;
-        Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        var shotCloneTransform = shotClone.GetComponent(Rigidbody2D);
+        shotCloneTransform.AddForce(shotClone.transform.up * shotSpeed);
     }
 }
 
