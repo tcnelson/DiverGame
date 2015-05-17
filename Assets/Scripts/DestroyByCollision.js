@@ -5,8 +5,11 @@ function OnCollisionEnter2D(hit : Collision2D){
 }
 
 function OnTriggerEnter2D(hit : Collider2D){
-	if (hit.transform.tag == "Player") {
+	if (hit.transform.tag == "Player" ) {
 		return; 
+	}
+	else if (hit.transform.tag == "Boundary") {
+		return;
 	}
 	
 	Destroy(gameObject);
