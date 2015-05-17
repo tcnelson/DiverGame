@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boundary
   - Shot
+  - ShotSpawn
   layers:
   - Default
   - TransparentFX
