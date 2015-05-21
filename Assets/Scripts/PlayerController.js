@@ -6,11 +6,20 @@ var startingHealth : float = 100;				// start health/oxygen
 var currentHealth : float;						// current health/oxygen
 var healthSlider : UnityEngine.UI.Slider;       // Reference to the UI's health bar.
 
+var shot : GameObject;							// Reference to the shot game object that the player fires
+var shotSpawn : Transform;						// Where the shot spawns
+var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
+var shotSpeed : float;							// The speed at which the shot clone will move
+
+private var nextFire : float;					// When the next shot can be fired
+
 private var movement : Vector2;    				// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;      // Reference to the player's rigidbody.
 
 private var isDead : boolean;                   // Whether the player is dead.
 private var damaged : boolean;                  // True when the player gets damaged.
+
+private var directionFacing : Vector2;			// The direction the player is facing
 
 function Awake() {
 	currentHealth = startingHealth;
@@ -18,10 +27,26 @@ function Awake() {
 
 function Start () {
 	playerRigidbody = GetComponent (Rigidbody2D);
+	
+	// Get location for spawning shot
+	for (var child in GetComponentsInChildren (Transform)) {
+		if (child.tag == "ShotSpawn") {
+			shotSpawn = child as Transform; 
+			break;
+		}
+	}
 }
 
 function Update () {
-
+	  
+	  // Fire shot at rate set in unity
+	  if (Input.GetButton("Fire1") && Time.time > nextFire)
+    {
+        nextFire = Time.time + fireRate;
+        var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+        var shotCloneTransform = shotClone.GetComponent(Rigidbody2D);
+        shotCloneTransform.AddForce(shotClone.transform.up * shotSpeed);
+    }
 }
 
 function FixedUpdate ()
@@ -30,12 +55,28 @@ function FixedUpdate ()
     var h : float = Input.GetAxisRaw ("Horizontal");
     var v : float = Input.GetAxisRaw ("Vertical");
 
+    // Check the direction the player is facing.
+    CheckDirection (h, v);
+    
     // Move the player around the scene.
     Move (h, v);
     
     // Decrease hp over time
     currentHealth -= ( 1 * Time.deltaTime );
     healthSlider.value = currentHealth;
+}
+
+function CheckDirection (h : float, v : float) {
+	// calculate angle between up and movement directions
+	// use cross product to determine angle clockwise-ness
+	var angle = Vector2.Angle(new Vector2(0, 1), new Vector2(h, v));
+	var cross = Vector3.Cross(new Vector2(0, 1), new Vector2(h, v));
+	if (cross.z < 0){
+		angle = 360 - angle;
+	}
+	
+	// rotate shotspawn about blue axis
+	shotSpawn.rotation = Quaternion.Euler(0, 0, angle);
 }
 
 function Move (h : float, v : float)
