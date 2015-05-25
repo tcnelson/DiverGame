@@ -20,11 +20,31 @@
 	</dict>
 	<dict>
 		<key>duration</key>
-		<real>1</real>
+		<real>0.10000000000000001</real>
 	</dict>
 	<dict>
 		<key>duration</key>
-		<real>1</real>
+		<real>0.10000000000000001</real>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<real>0.10000000000000001</real>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<real>0.10000000000000001</real>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<real>0.10000000000000001</real>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<real>0.10000000000000001</real>
+	</dict>
+	<dict>
+		<key>duration</key>
+		<real>0.10000000000000001</real>
 	</dict>
 </array>
 </plist>
