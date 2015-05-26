@@ -6,6 +6,10 @@ var followDistance : float;
 
 private var offset : Vector3;
 
+function Awake () {
+	target = GameObject.FindGameObjectWithTag ("Player");
+}
+
 function Start () {
 	offset = transform.position - target.transform.position;
 }	
