@@ -7,11 +7,11 @@ var currentHealth : float;						// current health/oxygen
 var healthSlider : UnityEngine.UI.Slider;       // Reference to the UI's health bar.
 
 var shot : GameObject;							// Reference to the shot game object that the player fires
-var shotSpawn : Transform;						// Where the shot spawns
 var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
 var shotSpeed : float;							// The speed at which the shot clone will move
 
 private var nextFire : float;					// When the next shot can be fired
+private var shotSpawn : Transform;						// Where the shot spawns
 
 private var movement : Vector2;    				// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;      // Reference to the player's rigidbody.
@@ -21,9 +21,12 @@ private var damaged : boolean;                  // True when the player gets dam
 
 private var directionFacing : Vector2;			// The direction the player is facing
 
+private var animator : Animator;				// The animator attached to the player
+
 function Awake() {
 	currentHealth = startingHealth;
 	playerRigidbody = GetComponent (Rigidbody2D);
+	animator = GetComponent (Animator);
 	
 	// Get location for spawning shot
 	for (var child in GetComponentsInChildren (Transform)) {
@@ -46,7 +49,9 @@ function Update () {
     
     // Move the player around the scene.
     Move (h, v);
-	  	  	  
+	
+	SetAnimationState();  
+	  
 	// Fire shot at rate set in unity
 	if (Input.GetButton("Fire1") && Time.time > nextFire)
     {
@@ -121,6 +126,29 @@ public function TakeDamage (amount : float)
         // ... it should die.
         Death ();
     }
+}
+
+function SetAnimationState ()
+{
+	var vertical = Input.GetAxis("Vertical");
+    var horizontal = Input.GetAxis("Horizontal");
+ 
+	if (vertical > 0)
+	{
+	    animator.SetInteger("Direction", 2);
+	}
+	else if (vertical < 0)
+	{
+	    animator.SetInteger("Direction", 0);
+	}
+	else if (horizontal > 0)
+	{
+	    animator.SetInteger("Direction", 3);
+	}
+	else if (horizontal < 0)
+	{
+	    animator.SetInteger("Direction", 1);
+	}
 }
 
 function Death ()
