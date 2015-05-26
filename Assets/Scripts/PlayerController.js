@@ -57,8 +57,11 @@ function Update () {
     {
         nextFire = Time.time + fireRate;
         var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-        var shotCloneTransform = shotClone.GetComponent(Rigidbody2D);
-        shotCloneTransform.AddForce(shotClone.transform.up * shotSpeed);
+        var shotCloneBody : Rigidbody2D = shotClone.GetComponent(Rigidbody2D);
+        
+        // rotate object and toss to it's right (so it looks like it's swimming forward)
+        shotClone.transform.Rotate(Vector3.forward, 90);
+        shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
     }
 }
 
