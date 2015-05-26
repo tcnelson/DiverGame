@@ -130,6 +130,10 @@ Prefab:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 180822, guid: acb9164b485f80742a4e07e86f9e553e, type: 2}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: acb9164b485f80742a4e07e86f9e553e, type: 2}
   m_IsPrefabParent: 0
@@ -456,7 +460,7 @@ GameObject:
   - 50: {fileID: 1020454054}
   - 61: {fileID: 1020454055}
   - 114: {fileID: 1020454053}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -809,7 +813,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2002089529}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShotSpawn
   m_TagString: ShotSpawn
   m_Icon: {fileID: 0}
@@ -839,7 +843,10 @@ GameObject:
   - 212: {fileID: 2061187867}
   - 50: {fileID: 2061187870}
   - 61: {fileID: 2061187869}
-  m_Layer: 0
+  - 58: {fileID: 2061187873}
+  - 114: {fileID: 2061187872}
+  - 114: {fileID: 2061187871}
+  m_Layer: 10
   m_Name: Pirate Ghost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -912,6 +919,44 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!114 &2061187871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061187866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414c5f427d49c4e4fad5172ffe85d87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2061187872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061187866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00f334fd03bba845ae3842d6630796c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fieldOfViewAngle: 110
+  playerInSight: 0
+  personalLastSighting: {x: 0, y: 0}
+--- !u!58 &2061187873
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2061187866}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.5
 --- !u!1 &2081605267
 GameObject:
   m_ObjectHideFlags: 0
