@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 var speed : float;            					// The speed that the player will move at.
 
@@ -23,9 +23,6 @@ private var directionFacing : Vector2;			// The direction the player is facing
 
 function Awake() {
 	currentHealth = startingHealth;
-}
-
-function Start () {
 	playerRigidbody = GetComponent (Rigidbody2D);
 	
 	// Get location for spawning shot
@@ -37,10 +34,21 @@ function Start () {
 	}
 }
 
+function Start () {
+	
+}
+
 function Update () {
-	  
-	  // Fire shot at rate set in unity
-	  if (Input.GetButton("Fire1") && Time.time > nextFire)
+
+  	// Store the input axes.
+    var h : float = Input.GetAxisRaw ("Horizontal");
+    var v : float = Input.GetAxisRaw ("Vertical");
+    
+    // Move the player around the scene.
+    Move (h, v);
+	  	  	  
+	// Fire shot at rate set in unity
+	if (Input.GetButton("Fire1") && Time.time > nextFire)
     {
         nextFire = Time.time + fireRate;
         var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
@@ -57,9 +65,6 @@ function FixedUpdate ()
 
     // Check the direction the player is facing.
     CheckDirection (h, v);
-    
-    // Move the player around the scene.
-    Move (h, v);
     
     // Decrease hp over time
     currentHealth -= ( 1 * Time.deltaTime );
