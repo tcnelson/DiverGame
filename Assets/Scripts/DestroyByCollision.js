@@ -11,6 +11,9 @@ function OnTriggerEnter2D(hit : Collider2D){
 	else if (hit.transform.tag == "Boundary") {			// Early return to ignore collisions w/ Boundary
 		return;
 	}
+	else if (hit.transform.tag == "EnemySight") {		// Early return to ignore enemy sense collliders
+		return;
+	}
 	else if (hit.transform.tag == "Enemy") {
 		Destroy(gameObject);							// Destroy shot on collision with enemy
 		Destroy(hit.gameObject);						// Destroy enemy on collision with shot
