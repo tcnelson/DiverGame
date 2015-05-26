@@ -456,6 +456,7 @@ GameObject:
   - 50: {fileID: 1020454054}
   - 61: {fileID: 1020454055}
   - 114: {fileID: 1020454053}
+  - 95: {fileID: 1020454056}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -487,8 +488,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a217d6945670ca54ca38d5ba94ef2960, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300040, guid: dcfc5d913afe54cc1b5525384f6f2df5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1020454052
 Transform:
   m_ObjectHideFlags: 0
@@ -497,7 +498,7 @@ Transform:
   m_GameObject: {fileID: 1020454050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 633, y: -636, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 50, y: 50, z: 1}
   m_Children:
   - {fileID: 2002089529}
   m_Father: {fileID: 0}
@@ -518,7 +519,6 @@ MonoBehaviour:
   currentHealth: 0
   healthSlider: {fileID: 1884681327}
   shot: {fileID: 131254, guid: 5d659b44d79f64ca7935715eeff7036b, type: 2}
-  shotSpawn: {fileID: 0}
   fireRate: .5
   shotSpeed: 10000
 --- !u!50 &1020454054
@@ -546,9 +546,26 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -.00283142086, y: 0}
+  m_Offset: {x: -.00283691403, y: 0}
   serializedVersion: 2
-  m_Size: {x: .212424546, y: .319999993}
+  m_Size: {x: .534817874, y: .971941352}
+--- !u!95 &1020454056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020454050}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c83cbbd7aa9574bd89df4034361b796d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1444687024
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +887,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 899673232b152794cb43dca711a3cf4f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d1a5a3aca912d4ec18704683796dffd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2061187868
 Transform:
