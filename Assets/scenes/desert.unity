@@ -206,7 +206,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 272490721}
-  - 58: {fileID: 272490722}
   m_Layer: 0
   m_Name: Spawn7
   m_TagString: Untagged
@@ -226,19 +225,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 6
---- !u!58 &272490722
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 272490720}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &471686904
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +233,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471686905}
-  - 58: {fileID: 471686906}
   m_Layer: 0
   m_Name: Spawn6
   m_TagString: Untagged
@@ -267,19 +252,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 5
---- !u!58 &471686906
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 471686904}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &599503840
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,7 +571,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1007376073}
-  - 58: {fileID: 1007376074}
   m_Layer: 0
   m_Name: Spawn9
   m_TagString: Untagged
@@ -619,19 +590,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 8
---- !u!58 &1007376074
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1007376072}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &1020454050
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,16 +657,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1020454050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53b953da0a4a7a84f9af75f442fb6408, type: 3}
+  m_Script: {fileID: 11500000, guid: 83136a0ecc0a67744a44301afdf4802c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 200
   startingHealth: 100
   currentHealth: 0
   healthSlider: {fileID: 1884681327}
   shot: {fileID: 131254, guid: 5d659b44d79f64ca7935715eeff7036b, type: 2}
-  fireRate: .5
-  shotSpeed: 10000
+  fireRate: .200000003
+  shotSpeed: 15000
 --- !u!50 &1020454054
 Rigidbody2D:
   m_ObjectHideFlags: 0
@@ -762,7 +720,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1060971527}
-  - 58: {fileID: 1060971528}
   m_Layer: 0
   m_Name: Spawn4
   m_TagString: Untagged
@@ -782,19 +739,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 3
---- !u!58 &1060971528
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1060971526}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &1344451480
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,7 +747,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1344451481}
-  - 58: {fileID: 1344451482}
   m_Layer: 0
   m_Name: Spawn2
   m_TagString: Untagged
@@ -823,19 +766,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 1
---- !u!58 &1344451482
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1344451480}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &1444687024
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +807,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1517811860}
-  - 58: {fileID: 1517811861}
   m_Layer: 0
   m_Name: Spawn1
   m_TagString: Untagged
@@ -897,19 +826,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 0
---- !u!58 &1517811861
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1517811859}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &1654596006
 GameObject:
   m_ObjectHideFlags: 0
@@ -992,7 +908,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1675135108}
-  - 58: {fileID: 1675135109}
   m_Layer: 0
   m_Name: Spawn5
   m_TagString: Untagged
@@ -1012,19 +927,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 4
---- !u!58 &1675135109
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1675135107}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &1707790455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +935,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1707790457}
-  - 58: {fileID: 1707790456}
   m_Layer: 0
   m_Name: Spawn8
   m_TagString: Untagged
@@ -1041,19 +942,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!58 &1707790456
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1707790455}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!4 &1707790457
 Transform:
   m_ObjectHideFlags: 0
@@ -1246,7 +1134,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2051466918}
-  - 58: {fileID: 2051466919}
   m_Layer: 0
   m_Name: Spawn3
   m_TagString: Untagged
@@ -1266,19 +1153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 181396691}
   m_RootOrder: 2
---- !u!58 &2051466919
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2051466917}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 200
 --- !u!1 &2081605267
 GameObject:
   m_ObjectHideFlags: 0
