@@ -53,7 +53,8 @@ function Update () {
 	SetAnimationState();  
 	  
 	// Fire shot at rate set in unity
-	if (Input.GetButton("Fire1") && Time.time > nextFire)
+	if (Time.time > nextFire &&
+	   (Input.GetButton("Fire1") || Input.GetButton("Fire6")))
     {
         nextFire = Time.time + fireRate;
         var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
@@ -68,8 +69,8 @@ function Update () {
 function FixedUpdate ()
 {
     // Store the input axes.
-    var h : float = Input.GetAxisRaw ("Horizontal");
-    var v : float = Input.GetAxisRaw ("Vertical");
+    var h : float = Input.GetAxisRaw ("Horizontal2");
+    var v : float = Input.GetAxisRaw ("Vertical2");
 
     // Check the direction the player is facing.
     CheckDirection (h, v);
