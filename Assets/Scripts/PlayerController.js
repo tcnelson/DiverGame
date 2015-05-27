@@ -27,6 +27,7 @@ function Awake() {
 	currentHealth = startingHealth;
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
+	animator.SetBool("IsAlive", true);
 	
 	// Get location for spawning shot
 	for (var child in GetComponentsInChildren (Transform)) {
@@ -139,18 +140,22 @@ function SetAnimationState ()
 	if (vertical > 0)
 	{
 	    animator.SetInteger("Direction", 2);
+	    animator.SetBool("IsMoving", true);
 	}
 	else if (vertical < 0)
 	{
 	    animator.SetInteger("Direction", 0);
+	    animator.SetBool("IsMoving", true);
 	}
 	else if (horizontal > 0)
 	{
 	    animator.SetInteger("Direction", 3);
+	    animator.SetBool("IsMoving", true);
 	}
 	else if (horizontal < 0)
 	{
 	    animator.SetInteger("Direction", 1);
+	    animator.SetBool("IsMoving", true);
 	}
 	else
 	{ 
