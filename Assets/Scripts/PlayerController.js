@@ -152,6 +152,10 @@ function SetAnimationState ()
 	{
 	    animator.SetInteger("Direction", 1);
 	}
+	else
+	{ 
+		animator.SetBool("IsMoving", false);
+	}
 }
 
 function Death ()
