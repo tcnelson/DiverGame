@@ -51,8 +51,6 @@ function OnTriggerStay2D (other : Collider2D)
 	        }
         }
     //}
-    
-    Debug.Log(playerInSight);
 }
 
 

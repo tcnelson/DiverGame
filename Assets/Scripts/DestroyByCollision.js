@@ -18,6 +18,7 @@ function OnTriggerEnter2D(hit : Collider2D){
 		Destroy(gameObject);							// Destroy shot on collision with enemy
 		Destroy(hit.gameObject);						// Destroy enemy on collision with shot
 	}
-	
-	Destroy(gameObject);								// Destroy shot on collision with other game object
+	else if (hit.transform.tag == "Environment") {
+		Destroy(gameObject);							// Destroy shot on collision with other game object
+	}
 }
