@@ -10,6 +10,8 @@ GameObject:
   - 4: {fileID: 493810}
   - 212: {fileID: 21277466}
   - 95: {fileID: 9572350}
+  - 61: {fileID: 6113998}
+  - 114: {fileID: 11422688}
   m_Layer: 0
   m_Name: Treasure Chest
   m_TagString: Untagged
@@ -29,6 +31,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6113998
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157684}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .50999999, y: .310000002}
 --- !u!95 &9572350
 Animator:
   serializedVersion: 3
@@ -46,6 +61,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11422688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 157684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e28bacd9a47c409cab9128e4c49bda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deleteDelay: 3
 --- !u!212 &21277466
 SpriteRenderer:
   m_ObjectHideFlags: 1
