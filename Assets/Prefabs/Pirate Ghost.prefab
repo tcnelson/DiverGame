@@ -26,10 +26,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 468450}
   - 212: {fileID: 21211888}
+  - 95: {fileID: 9538798}
   - 50: {fileID: 5079598}
   - 61: {fileID: 6132524}
   - 114: {fileID: 11478826}
-  - 95: {fileID: 9538798}
+  - 114: {fileID: 11418402}
   m_Layer: 10
   m_Name: Pirate Ghost
   m_TagString: Enemy
@@ -89,7 +90,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2
+  m_Radius: 20
 --- !u!61 &6132524
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -120,6 +121,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11418402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 183746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c168733d179cde4491016613b0245ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 200
 --- !u!114 &11446914
 MonoBehaviour:
   m_ObjectHideFlags: 1
