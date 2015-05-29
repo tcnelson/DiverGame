@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e28bacd9a47c409cab9128e4c49bda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deleteDelay: 1
+  deleteDelay: .5
   idleSprite: {fileID: 21300000, guid: b6f68da0e7f534d03a8b7b820b802f2f, type: 3}
   openSprite: {fileID: 21300002, guid: b6f68da0e7f534d03a8b7b820b802f2f, type: 3}
 --- !u!212 &21277466
