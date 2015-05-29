@@ -1,20 +1,18 @@
 ﻿#pragma strict
 
-var deleteDelay: float;							// Pause before deleting the treasure chest game object (after it's been opened)
+var deleteDelay: float;								// Pause before deleting the treasure chest game object (after it's been opened)
+var idleSprite : Sprite;
+var openSprite : Sprite;
 
-private var animator: Animator; 				// The animator attached to the treasure chest
+private var spriteRenderer : SpriteRenderer;
 
 function Awake () {
-	animator = GetComponent(Animator);
-}
-
-function Start () {
-	animator.SetBool("IsPickedUp", false);		// With the "IsPickedUp" parameter false, the treasure chest will be idle
+	spriteRenderer = GetComponent(SpriteRenderer);	// The sprite renderer for the treasure chest
 }
 
 function OnTriggerEnter2D(hit : Collider2D){
-	if (hit.transform.tag == "Player" ) {	
-		animator.SetBool("IsPickedUp", true);	// Sets "IsPickedUp" to true on contact with player to trigger opening animation
-		Destroy(gameObject, deleteDelay);		// Destroy treasure chest game object after a delay
+	if (hit.transform.tag == "Player" ) {			// Change sprite to open version on contact with player's collider
+		spriteRenderer.sprite = openSprite;
+		Destroy(gameObject, deleteDelay);			// Destroy treasure chest game object after a delay
 	}
 }
