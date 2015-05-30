@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="Environment" tilewidth="32" tileheight="32">
+  <terraintypes>
+   <terrain name="Sand" tile="-1"/>
+   <terrain name="Trench" tile="-1"/>
+   <terrain name="Rock" tile="-1"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,0">
+   <image width="32" height="32" source="../Assets/Environment/Sand 1.png"/>
+  </tile>
+  <tile id="1" terrain="2,2,2,2">
+   <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Left Corner.png"/>
+  </tile>
+  <tile id="2">
+   <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Right Corner.png"/>
+  </tile>
+  <tile id="3">
+   <image width="32" height="32" source="../Assets/Environment/Border/Border Top Left Corner.png"/>
+  </tile>
+  <tile id="4">
+   <image width="32" height="32" source="../Assets/Environment/Border/Border Top Right Corner.png"/>
+  </tile>
+  <tile id="5">
+   <image width="32" height="32" source="../Assets/Environment/Border/Top and Bottom Border.png"/>
+  </tile>
+  <tile id="6" terrain="1,1,1,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Middle.png"/>
+  </tile>
+  <tile id="7" terrain="1,0,1,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Left Inner Corner.png"/>
+  </tile>
+  <tile id="8" terrain="0,1,1,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Right Inner Corner.png"/>
+  </tile>
+  <tile id="9" terrain="1,1,1,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Left Inner Corner.png"/>
+  </tile>
+  <tile id="10" terrain="1,1,0,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Right Inner Corner.png"/>
+  </tile>
+  <tile id="11" terrain="0,1,0,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Left Corner.png"/>
+  </tile>
+  <tile id="12" terrain="1,0,0,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Right Corner.png"/>
+  </tile>
+  <tile id="13" terrain="0,0,0,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Left Corner.png"/>
+  </tile>
+  <tile id="14" terrain="0,0,1,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Right Corner.png"/>
+  </tile>
+  <tile id="15" terrain="1,1,0,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Bottom.png"/>
+  </tile>
+  <tile id="16" terrain="0,1,0,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Left Side.png"/>
+  </tile>
+  <tile id="17" terrain="1,0,1,0">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Right Side.png"/>
+  </tile>
+  <tile id="18" terrain="0,0,1,1">
+   <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Top.png"/>
+  </tile>
+  <tile id="19">
+   <image width="32" height="32" source="../Assets/Environment/Border/Left and Right Border.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="Overlays" tilewidth="32" tileheight="32">
+  <tile id="0">
+   <image width="32" height="32" source="../Assets/Environment/Water Layer (Translucent) .png"/>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt3cluwzAMBNB0b7ov+f9vrXwQYAi2q1iUNTPkYS4FCgR9oBZKSu9Pp9NjBCIPKZeUG/J8pzxdmR+Az13mEh5Q8ejxkvKV8g7wuVU93lJeKz0Q60LNo9Zkqg3EulD0mLI1bqFbePJgsFDz+Eg5r3g8p3wCfEYvHlsWc5NfcBcVj2vWu9kF0cajB/LaNzzGf3ZFj2nv8VWkZn8YHselpmbQ1l3ePdD2JZ490Cw8eyBaqHus9RfXLKY95ei5RNkjm8zXWlsW0/5+9Pyu7pHzXWGB0Ffx4vFWaTF6LezFYyk1Pcij94tePWosyvFt+p3e45hHjxqLpfEqr5971oxHj729+XPxsx51Eh7702O+9+hxzd2go/vD3jzynFwzf4zoRXryqJ3HR1l48rC06LnG8uLROodP9fBfDyw8jvHIf//cm+zZp1f1yPN2uXe41uHoe/CqHhbj04jzKkUPi7l71L0TRY+9tZHHp5FvdcJjfE2ER3gckdZeSHjYpnVNFR52aV1TodzHUvCwWN+ivAlR8LA6X0IYt9g9rPu2o8ctdg+l2mD0sOgThoddrOthaV6P+RzHY3SNhEd4tKR8t2l1byc8bH2sXGK9i+US6yvb1L6pLd+qjz6H8uiB/D19qh5L8z2Dg6rHkg+DgxcPtoQHVtg9yv4iwpmSZ4+19dTovmB44O3tvHjMx6it8w+UM3F1D5Xvzlfw2HteHh59wnwXVM1jT20w9UqYPNTHKSaPljtWbPsQBg+Fe9JKHq3fbxEe9ml5g8YylzN4KLyxYfeo7YfUzufRL2lLjztvLHUSHljx4ME0p3vwYKmN8MBLeGAFzUPtPSC7h2VtsFmoezCNU4geDN//6cnDe22oerDWBprH/K3A3vMOZgs0jyWb/1zKt07MFsgetS6s8wSrx9xlySQ8+mbrfwDOTdjuVbF6TGusrTO9bKJWF4geS/8HcM1ErS7QPNb25mz32VQ81N7VhIdGEDy2+ojs+21Gj6gNfA/V/UWNx23KYwQidyl/ZLZm/g==
+  </data>
+ </layer>
+</map>
