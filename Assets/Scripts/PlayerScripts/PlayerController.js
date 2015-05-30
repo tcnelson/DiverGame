@@ -2,9 +2,7 @@
 
 var speed : float;            					// The speed that the player will move at.
 
-var startingHealth : float = 100;				// start health/oxygen
-var currentHealth : float;						// current health/oxygen
-var healthSlider : UnityEngine.UI.Slider;       // Reference to the UI's health bar.
+var playerHealth : PlayerHealth;				// Reference to player health
 
 var shot : GameObject;							// Reference to the shot game object that the player fires
 var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
@@ -24,9 +22,9 @@ private var directionFacing : Vector2;			// The direction the player is facing
 private var animator : Animator;				// The animator attached to the player
 
 function Awake() {
-	currentHealth = startingHealth;
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
+	playerHealth = GameObject.FindGameObjectWithTag("GameController").GetComponent(PlayerHealth);
 	
 	// Get location for spawning shot
 	for (var child in GetComponentsInChildren (Transform)) {
@@ -75,9 +73,12 @@ function FixedUpdate ()
     // Check the direction the player is facing.
     CheckDirection (h, v);
     
-    // Decrease hp over time
-    currentHealth -= ( 1 * Time.deltaTime );
-    healthSlider.value = currentHealth;
+    // If the player has lost all it's health and the death flag hasn't been set yet...
+    if(playerHealth.currentHealth <= 0 && !isDead)
+    {
+        // ... it should die.
+        Death ();
+    }
 }
 
 function CheckDirection (h : float, v : float) {
@@ -106,7 +107,7 @@ function Move (h : float, v : float)
     
     // Movement consumes hp
     if (movement.x != 0 || movement.y != 0) {
-    	currentHealth -= ( 10 * Time.deltaTime );
+    	playerHealth.currentHealth -= ( 10 * Time.deltaTime );
     }
 }
 
@@ -116,20 +117,10 @@ public function TakeDamage (amount : float)
     damaged = true;
 
     // Reduce the current health by the damage amount.
-    currentHealth -= amount;
-
-    // Set the health bar's value to the current health.
-    healthSlider.value = currentHealth;
+    playerHealth.currentHealth -= amount;
 
     // Play the hurt sound effect.
     //playerAudio.Play ();
-
-    // If the player has lost all it's health and the death flag hasn't been set yet...
-    if(currentHealth <= 0 && !isDead)
-    {
-        // ... it should die.
-        Death ();
-    }
 }
 
 function SetAnimationState ()
