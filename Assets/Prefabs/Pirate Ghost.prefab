@@ -159,6 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  health: 0
+  startingHealth: 100
 --- !u!212 &21211888
 SpriteRenderer:
   m_ObjectHideFlags: 1
