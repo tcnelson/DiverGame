@@ -107,13 +107,17 @@ function Move (h : float, v : float)
     
     // Movement consumes hp
     if (movement.x != 0 || movement.y != 0) {
-    	playerHealth.Damage( 2 * Time.deltaTime );
+    	playerHealth.Damage( 1 * Time.deltaTime );
     } else {
-    	playerHealth.Damage(0.2 * Time.deltaTime);
+    	playerHealth.Damage(0.1 * Time.deltaTime);
     }
 }
 
-public function TakeDamage (amount : float)
+public function Heal (amount : float) {
+	playerHealth.Heal(amount);
+}
+
+public function Damage (amount : float)
 {
     // Set the damaged flag so the screen will flash.
     damaged = true;

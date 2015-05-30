@@ -3,13 +3,17 @@
 var speed : int;
 
 private var player : GameObject;
+private var playerController : PlayerController;
+
 private var enemySight : EnemySightController;
 private var myRigidBody : Rigidbody2D;
 
 function Awake () {
 
-	enemySight = GetComponentInChildren(EnemySightController);
 	player = GameObject.FindGameObjectWithTag("Player");
+	playerController = player.GetComponent(PlayerController);
+	
+	enemySight = GetComponentInChildren(EnemySightController);
 	myRigidBody = GetComponent (Rigidbody2D);
 }
 
@@ -29,8 +33,8 @@ function Chase () {
     myRigidBody.AddForce(distance * speed);
 }
 
-function OnTrigggerEnter2D(other : Collider2D) {
-
-
-
+function OnTriggerStay2D(other : Collider2D) {
+	if (other.transform.tag == "Player") {
+		playerController.Damage(1 * Time.deltaTime);
+	}
 }
