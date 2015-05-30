@@ -502,6 +502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 100
   currentHealth: 0
+  isDead: 0
 --- !u!4 &743977275
 Transform:
   m_ObjectHideFlags: 0
@@ -910,7 +911,7 @@ MonoBehaviour:
   speed: 200
   playerHealth: {fileID: 0}
   shot: {fileID: 131254, guid: 5d659b44d79f64ca7935715eeff7036b, type: 2}
-  fireRate: .200000003
+  fireRate: .5
   shotSpeed: 15000
 --- !u!50 &1020454054
 Rigidbody2D:
