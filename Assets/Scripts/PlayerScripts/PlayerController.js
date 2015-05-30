@@ -50,10 +50,10 @@ function Update () {
 	
 	SetAnimationState();  
 	  
-	// Fire shot at rate set in unity
-	if (Time.time > nextFire &&
-	   (Input.GetButton("Fire1") || Input.GetButton("Fire6")))
-    {
+  	var canFire : boolean = Time.time > nextFire;
+  	var firing : boolean = (Input.GetButton("Fire1") || Input.GetButton("Fire6"));
+	// Fire shot at rate set in unity (use is probably holding the fire button)
+	if (canFire && firing) {
         nextFire = Time.time + fireRate;
         var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
         var shotCloneBody : Rigidbody2D = shotClone.GetComponent(Rigidbody2D);
@@ -61,6 +61,10 @@ function Update () {
         // rotate object and toss to it's right (so it looks like it's swimming forward)
         shotClone.transform.Rotate(Vector3.forward, 90);
         shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
+    // if user is not touching fire buttons (manually engaging the trigger each fire)
+    } else if (!canFire && !firing) {
+    	// reward manual triggers, remove half remaining firetime
+    	 nextFire = Time.time + 0.5 * (nextFire - Time.time);
     }
 }
 
@@ -107,17 +111,23 @@ function Move (h : float, v : float)
     
     // Movement consumes hp
     if (movement.x != 0 || movement.y != 0) {
-    	playerHealth.currentHealth -= ( 10 * Time.deltaTime );
+    	playerHealth.Damage( 1 * Time.deltaTime );
+    } else {
+    	playerHealth.Damage(0.1 * Time.deltaTime);
     }
 }
 
-public function TakeDamage (amount : float)
+public function Heal (amount : float) {
+	playerHealth.Heal(amount);
+}
+
+public function Damage (amount : float)
 {
     // Set the damaged flag so the screen will flash.
     damaged = true;
 
     // Reduce the current health by the damage amount.
-    playerHealth.currentHealth -= amount;
+    playerHealth.Damage(amount);
 
     // Play the hurt sound effect.
     //playerAudio.Play ();

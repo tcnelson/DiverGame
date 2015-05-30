@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+var damage : float = 20f;
+
 function OnCollisionEnter2D(hit : Collision2D){
 	//Destroy(gameObject);
 }
@@ -15,8 +17,9 @@ function OnTriggerEnter2D(hit : Collider2D){
 		return;
 	}
 	else if (hit.transform.tag == "Enemy") {
+		var enemyController = hit.GetComponent(EnemyController);
+		enemyController.Damage(damage);
 		Destroy(gameObject);							// Destroy shot on collision with enemy
-		Destroy(hit.gameObject);						// Destroy enemy on collision with shot
 	}
 	else if (hit.transform.tag == "Environment") {
 		Destroy(gameObject);							// Destroy shot on collision with other game object
