@@ -107,7 +107,9 @@ function Move (h : float, v : float)
     
     // Movement consumes hp
     if (movement.x != 0 || movement.y != 0) {
-    	playerHealth.currentHealth -= ( 10 * Time.deltaTime );
+    	playerHealth.Damage( 2 * Time.deltaTime );
+    } else {
+    	playerHealth.Damage(0.2 * Time.deltaTime);
     }
 }
 
@@ -117,7 +119,7 @@ public function TakeDamage (amount : float)
     damaged = true;
 
     // Reduce the current health by the damage amount.
-    playerHealth.currentHealth -= amount;
+    playerHealth.Damage(amount);
 
     // Play the hurt sound effect.
     //playerAudio.Play ();
