@@ -7,64 +7,185 @@
    <terrain name="Rock" tile="-1"/>
   </terraintypes>
   <tile id="0" terrain="0,0,0,0">
+   <properties>
+    <property name="unity:tag" value="Ground"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Sand 1.png"/>
   </tile>
   <tile id="1" terrain="2,2,2,2">
+   <properties>
+    <property name="unity:tag" value="Boundary"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Left Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3.25" y="2.75" width="25.5" height="26"/>
+   </objectgroup>
   </tile>
   <tile id="2">
+   <properties>
+    <property name="unity:tag" value="Boundary"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Right Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3.25" y="2.75" width="25.25" height="26.25"/>
+   </objectgroup>
   </tile>
   <tile id="3">
+   <properties>
+    <property name="unity:tag" value="Boundary"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Top Left Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3.75" y="3.75" width="24.25" height="25"/>
+   </objectgroup>
   </tile>
   <tile id="4">
+   <properties>
+    <property name="unity:tag" value="Boundary"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Top Right Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3.75" y="4.25" width="24.25" height="24"/>
+   </objectgroup>
   </tile>
   <tile id="5">
+   <properties>
+    <property name="unity:tag" value="Boundary"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Top and Bottom Border.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.5" y="2.75" width="26.75" height="26.25"/>
+   </objectgroup>
   </tile>
   <tile id="6" terrain="1,1,1,1">
+   <properties>
+    <property name="unity:tag" value="Trench"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Middle.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.25" y="2" width="27.75" height="28"/>
+   </objectgroup>
   </tile>
   <tile id="7" terrain="1,0,1,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Left Inner Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.75" y="3.25" width="10.5" height="25.25"/>
+    <object id="0" x="16.5" y="19.25" width="11.75" height="9.25"/>
+   </objectgroup>
   </tile>
   <tile id="8" terrain="0,1,1,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Right Inner Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="19.5" y="3.25" width="10" height="25.25"/>
+    <object id="0" x="2.25" y="20.25" width="13.75" height="8"/>
+   </objectgroup>
   </tile>
   <tile id="9" terrain="1,1,1,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Left Inner Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.25" y="2.5" width="11.25" height="26.75"/>
+    <object id="0" x="16.5" y="3" width="13.25" height="9.75"/>
+   </objectgroup>
   </tile>
   <tile id="10" terrain="1,1,0,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Right Inner Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3" y="3.25" width="12.5" height="9.25"/>
+    <object id="0" x="18.5" y="3.75" width="10.75" height="25.25"/>
+   </objectgroup>
   </tile>
   <tile id="11" terrain="0,1,0,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Left Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="18" y="2.25" width="11.25" height="11"/>
+   </objectgroup>
   </tile>
   <tile id="12" terrain="1,0,0,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Right Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3" y="2.75" width="11.25" height="10.75"/>
+   </objectgroup>
   </tile>
   <tile id="13" terrain="0,0,0,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Left Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="17.75" y="19.5" width="11.75" height="9.75"/>
+   </objectgroup>
   </tile>
   <tile id="14" terrain="0,0,1,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Right Corner.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.25" y="19.25" width="12" height="10.25"/>
+   </objectgroup>
   </tile>
   <tile id="15" terrain="1,1,0,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Bottom.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="3.25" y="2.5" width="25.5" height="10.5"/>
+   </objectgroup>
   </tile>
   <tile id="16" terrain="0,1,0,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Left Side.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="19" y="3.75" width="10" height="24"/>
+   </objectgroup>
   </tile>
   <tile id="17" terrain="1,0,1,0">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Right Side.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.25" y="2.75" width="12.75" height="25.75"/>
+   </objectgroup>
   </tile>
   <tile id="18" terrain="0,0,1,1">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Top.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.75" y="18.25" width="26.75" height="11"/>
+   </objectgroup>
   </tile>
   <tile id="19">
+   <properties>
+    <property name="unity:tag" value="Trench Wall"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Left and Right Border.png"/>
+   <objectgroup draworder="index">
+    <object id="0" x="2.75" y="3.25" width="26.25" height="25.75"/>
+   </objectgroup>
   </tile>
  </tileset>
  <tileset firstgid="21" name="Overlays" tilewidth="32" tileheight="32">
@@ -88,12 +209,7 @@
  </tileset>
  <layer name="Tile Layer 1" width="100" height="100">
   <data encoding="base64" compression="zlib">
-   eJzt3cluwzAMBNB0b7ov+f9vrXwQYAi2q1iUNTPkYS4FCgR9oBZKSu9Pp9NjBCIPKZeUG/J8pzxdmR+Az13mEh5Q8ejxkvKV8g7wuVU93lJeKz0Q60LNo9Zkqg3EulD0mLI1bqFbePJgsFDz+Eg5r3g8p3wCfEYvHlsWc5NfcBcVj2vWu9kF0cajB/LaNzzGf3ZFj2nv8VWkZn8YHselpmbQ1l3ePdD2JZ490Cw8eyBaqHus9RfXLKY95ei5RNkjm8zXWlsW0/5+9Pyu7pHzXWGB0Ffx4vFWaTF6LezFYyk1Pcij94tePWosyvFt+p3e45hHjxqLpfEqr5971oxHj729+XPxsx51Eh7702O+9+hxzd2go/vD3jzynFwzf4zoRXryqJ3HR1l48rC06LnG8uLROodP9fBfDyw8jvHIf//cm+zZp1f1yPN2uXe41uHoe/CqHhbj04jzKkUPi7l71L0TRY+9tZHHp5FvdcJjfE2ER3gckdZeSHjYpnVNFR52aV1TodzHUvCwWN+ivAlR8LA6X0IYt9g9rPu2o8ctdg+l2mD0sOgThoddrOthaV6P+RzHY3SNhEd4tKR8t2l1byc8bH2sXGK9i+US6yvb1L6pLd+qjz6H8uiB/D19qh5L8z2Dg6rHkg+DgxcPtoQHVtg9yv4iwpmSZ4+19dTovmB44O3tvHjMx6it8w+UM3F1D5Xvzlfw2HteHh59wnwXVM1jT20w9UqYPNTHKSaPljtWbPsQBg+Fe9JKHq3fbxEe9ml5g8YylzN4KLyxYfeo7YfUzufRL2lLjztvLHUSHljx4ME0p3vwYKmN8MBLeGAFzUPtPSC7h2VtsFmoezCNU4geDN//6cnDe22oerDWBprH/K3A3vMOZgs0jyWb/1zKt07MFsgetS6s8wSrx9xlySQ8+mbrfwDOTdjuVbF6TGusrTO9bKJWF4geS/8HcM1ErS7QPNb25mz32VQ81N7VhIdGEDy2+ojs+21Gj6gNfA/V/UWNx23KYwQidyl/ZLZm/g==
-  </data>
- </layer>
- <layer name="Tile Layer 2" width="100" height="100">
-  <data encoding="base64" compression="zlib">
-   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+   eJztndty3SAMRdNbLm3aJG3+/1uLH5hhGMACJNgSetgvyUlss6wLsuTz/eHh4dEFoR9Bn0FflOsj6KlTfwHOO9en84DSiTx+Br0H/QY4b6s8XoN+EXkg2oU1HlQml20g2oVFHpdafgudxUk8NLCwxuNP0EuFx3PQG8A5nsKjxSJl8g+cixUePflu5ILI5kQeyLmv89h/7hZ5XHuP90yU/aHzWCeKzaDlXafzQNuXnMwDjcXJPBBZWOdRqy/WWFx7yt2xxDKPyCTNtVosrv397vhunUfUB4EFQl3lFB6vRBa7c+FTeJREqUGu3i+eyoPCIvdv199I+7ETeVBYlPxVzJ8lbeZEHqO1+ZfsZxJ24jzGJRHvT+TR0xvUWx9uxZj4u9azsNN4xDWhxI+RWmS0vdSn1Y6Z+sKok3hQ4/goi9L/f+485ik8OFnUciyOuHQKj9m1uuzhrgbmPNbwiOsfa5O1Or3zqCvPZUZ8VW8fvPOQW5uR51XOo24bs7F7pCbCsa+xyGP0Po3+aWZWJ3/+5TwweuNGbcV5yPCITHp686zxmK2FSNbRqfeIJR6z+Y3z4NNsTiXdj3USD478VnomhJp3WeDB9Xxphd/K+/BzPtp5cNdtV/eR5ny089BkGxRp48FRJ3QefOK2h1Jc9/5dHB67bcR5OI8Z3eWLzgODDxeX3XNT6DzSfKoVZ7m4nJpf3a1zqVZL6ZulztTms+qzz6E08kgZ5Ov8ln2uta9o5aR3M5wIa76bB+W5RKmPfMSvlOK9Bg6reHDXl3pjbm1ODVWSPHaz0CgpHhJ1Vy0+B40Hdx95i0NeX0R9z9hOHlw1DYpvqh1rd10QhQeXbVDjRIv97r3dbh6cfqq1lrV9TMlGtPkvTh6r/JSVd+e3eMzGQg7boORQo8fRxmM2Fs7Ou1BzWZRe0JU8Ut9L4TJrG9S1GjmOtn1LjQd1rVb1BVr3UxQed2vVu0alOrcki1Hfi8qjdm+N9JHP1J2Q+6RX8ii9Y2CEw6z/np0Ds8Ij5bI7js7MoGmJ5VQeOzkgz9ig8RiNz1QGHP2gGr7zY5aHdE4v0fOmxU5GeEhfm/Po803S8ZGbh6aYTuWx8v6yNtPhPGzzWG3vzgOHhfZ5QGkeq+8tTtvQxqLGY2UuJclDk59q8dh1HdLv/9SgnMfO6zjdNko8dl7Hyj46VEUeCPMoI++LssQi5bH7PGps7rjkNWbNLJB5ULlojRNaeaRcSkych6xa3wGYMtHWV6WVx5VjtZ7pRSbW7AKRR+l7AGtMrNkFGo/a3lxbP5sVHtbmapyHDSHwaNURte+3NfJw28DnYXV/QeHxNejRBaFvQf8B+VR/Ug==
   </data>
  </layer>
 </map>
