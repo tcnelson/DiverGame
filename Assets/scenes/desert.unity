@@ -111,22 +111,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 181396689}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4d5e094ea33d294db12fb681165b352, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc22ea0f627d4e1f8f6acfea2af928a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: 100
-  enemy: {fileID: 183746, guid: a4e633e8b0edc954da9017510dd5f098, type: 2}
+  prefab: {fileID: 183746, guid: a4e633e8b0edc954da9017510dd5f098, type: 2}
   spawnTime: 3
-  spawnPoints:
-  - {fileID: 1517811860}
-  - {fileID: 1344451481}
-  - {fileID: 2051466918}
-  - {fileID: 1060971527}
-  - {fileID: 1675135108}
-  - {fileID: 471686905}
-  - {fileID: 272490721}
-  - {fileID: 1707790457}
-  - {fileID: 1007376073}
 --- !u!4 &181396691
 Transform:
   m_ObjectHideFlags: 0
@@ -175,13 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc22ea0f627d4e1f8f6acfea2af928a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oxygen: {fileID: 178596, guid: 59336c42c9a2c4c5a8a243e309435dbd, type: 2}
+  prefab: {fileID: 178596, guid: 59336c42c9a2c4c5a8a243e309435dbd, type: 2}
   spawnTime: 4
-  spawnPoints:
-  - {fileID: 578798676}
-  - {fileID: 1943471138}
-  - {fileID: 1738847787}
-  - {fileID: 970390609}
 --- !u!4 &212388993
 Transform:
   m_ObjectHideFlags: 0
@@ -197,7 +181,7 @@ Transform:
   - {fileID: 1738847787}
   - {fileID: 970390609}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
 --- !u!1 &215543566
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,16 +407,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 591448079}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 518d65b208fd74b10b8ca32bdce77701, type: 3}
+  m_Script: {fileID: 11500000, guid: 3dc22ea0f627d4e1f8f6acfea2af928a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treasure: {fileID: 157684, guid: 4431823492f2d4684a987b29c8999ab5, type: 2}
+  prefab: {fileID: 157684, guid: 4431823492f2d4684a987b29c8999ab5, type: 2}
   spawnTime: 5
-  spawnPoints:
-  - {fileID: 563860008}
-  - {fileID: 1632174385}
-  - {fileID: 215543567}
-  - {fileID: 1147478839}
 --- !u!1 &599503840
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +513,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
 --- !u!1 &839756288
 GameObject:
   m_ObjectHideFlags: 0
