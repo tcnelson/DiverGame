@@ -11,6 +11,8 @@ private var enemySight : EnemySightController;
 private var myRigidBody : Rigidbody2D;
 private var spriteRenderer : SpriteRenderer;
 
+private var animator : Animator;
+
 function Awake () {
 
 	player = GameObject.FindGameObjectWithTag("Player");
@@ -19,10 +21,13 @@ function Awake () {
 	enemySight = GetComponentInChildren(EnemySightController);
 	myRigidBody = GetComponent (Rigidbody2D);
 	spriteRenderer = GetComponent(SpriteRenderer);
+	
+	animator = GetComponent(Animator);
 }
 
 function Start () {
 	health = startingHealth;
+	animator.SetInteger("Direction", 0);
 }
 
 function Update () {
@@ -32,6 +37,8 @@ function Update () {
         Chase();
         
     spriteRenderer.color = Color(1f, 1f, 1f, (health / startingHealth));
+    
+    SetAnimationState ();
 }
 
 function Chase () {
@@ -54,3 +61,17 @@ function Damage(amount : float) {
 function Die() {
 	Destroy(gameObject);
 }
+
+function SetAnimationState () {
+    var horizontal = myRigidBody.velocity.x;
+    
+   	if (horizontal < 0){
+   		animator.SetInteger("Direction", 1);  		
+ 	}
+ 	else {
+ 		animator.SetInteger("Direction", 0);
+ 	}
+ 	
+}
+    
+    
