@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 410210}
   - 212: {fileID: 21205382}
   - 61: {fileID: 6170582}
+  - 114: {fileID: 11475952}
   m_Layer: 0
   m_Name: Seaweed 1
-  m_TagString: Untagged
+  m_TagString: Seaweed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +43,17 @@ BoxCollider2D:
   m_Offset: {x: -.0280655101, y: -.000935554504}
   serializedVersion: 2
   m_Size: {x: .260126829, y: .318128884}
+--- !u!114 &11475952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361aaece4e218c64a91d3d74679fa8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21205382
 SpriteRenderer:
   m_ObjectHideFlags: 1

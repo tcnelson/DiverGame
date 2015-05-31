@@ -1,27 +1,27 @@
 #pragma strict
 
 var speed : float;            					// The speed that the player will move at.
-
-var playerHealth : PlayerHealth;				// Reference to player health
-
 var shot : GameObject;							// Reference to the shot game object that the player fires
 var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
 var shotSpeed : float;							// The speed at which the shot clone will move
 
 private var nextFire : float;					// When the next shot can be fired
-private var shotSpawn : Transform;						// Where the shot spawns
+private var shotSpawn : Transform;				// Where the shot spawns
+private var sword : SwordController;			// Reference to sword controller
 
 private var movement : Vector2;    				// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;      // Reference to the player's rigidbody.
 
 private var isDead : boolean;                   // Whether the player is dead.
 private var damaged : boolean;                  // True when the player gets damaged.
+private var playerHealth : PlayerHealth;		// Reference to player health
 
 private var directionFacing : Vector2;			// The direction the player is facing
-
 private var animator : Animator;				// The animator attached to the player
 
+
 function Awake() {
+	sword = GetComponentInChildren(SwordController);
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
 	playerHealth = GameObject.FindGameObjectWithTag("GameController").GetComponent(PlayerHealth);
@@ -47,25 +47,41 @@ function Update () {
     
     // Move the player around the scene.
     Move (h, v);
-	
-	SetAnimationState();  
-	  
+
+	// Manage attacks	
   	var canFire : boolean = Time.time > nextFire;
   	var firing : boolean = (Input.GetButton("Fire1") || Input.GetButton("Fire6"));
-	// Fire shot at rate set in unity (use is probably holding the fire button)
+  	var slashing : boolean = (Input.GetButton("Fire2") || Input.GetButton("Fire7"));
+  	
 	if (canFire && firing) {
-        nextFire = Time.time + fireRate;
-        var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
-        var shotCloneBody : Rigidbody2D = shotClone.GetComponent(Rigidbody2D);
-        
-        // rotate object and toss to it's right (so it looks like it's swimming forward)
-        shotClone.transform.Rotate(Vector3.forward, 90);
-        shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
-    // if user is not touching fire buttons (manually engaging the trigger each fire)
+		// Fire shot at rate set in unity (user is probably holding the fire button)
+        Shoot();
+    } else if (!sword.isActive && slashing) {
+    	StartSlashing();
     } else if (!canFire && !firing) {
+    	// if user is not touching fire buttons (manually engaging the trigger each fire)
     	// reward manual triggers, remove half remaining firetime
     	 nextFire = Time.time + 0.5 * (nextFire - Time.time);
     }
+}
+
+function Shoot() {
+	nextFire = Time.time + fireRate;
+    var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
+    var shotCloneBody : Rigidbody2D = shotClone.GetComponent(Rigidbody2D);
+    
+    // rotate object and toss to it's right (so it looks like it's swimming forward)
+    shotClone.transform.Rotate(Vector3.forward, 90);
+    shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
+}
+
+function StartSlashing() {
+	sword.isActive = true;
+	Invoke("FinishSlashing", 0.5);
+}
+
+function FinishSlashing() {
+	sword.isActive = false;
 }
 
 function FixedUpdate ()
@@ -115,6 +131,24 @@ function Move (h : float, v : float)
     } else {
     	playerHealth.Damage(0.1 * Time.deltaTime);
     }
+    
+    // set animation movement states
+    if (movement.y > 0)
+	{
+	    animator.SetInteger("Direction", 2);
+	}
+	else if (movement.y < 0)
+	{
+	    animator.SetInteger("Direction", 0);
+	}
+	else if (movement.x > 0)
+	{
+	    animator.SetInteger("Direction", 3);
+	}
+	else if (movement.x < 0)
+	{
+	    animator.SetInteger("Direction", 1);
+	}
 }
 
 public function Heal (amount : float) {
@@ -131,29 +165,6 @@ public function Damage (amount : float)
 
     // Play the hurt sound effect.
     //playerAudio.Play ();
-}
-
-function SetAnimationState ()
-{
-	var vertical = Input.GetAxis("Vertical");
-    var horizontal = Input.GetAxis("Horizontal");
- 
-	if (vertical > 0)
-	{
-	    animator.SetInteger("Direction", 2);
-	}
-	else if (vertical < 0)
-	{
-	    animator.SetInteger("Direction", 0);
-	}
-	else if (horizontal > 0)
-	{
-	    animator.SetInteger("Direction", 3);
-	}
-	else if (horizontal < 0)
-	{
-	    animator.SetInteger("Direction", 1);
-	}
 }
 
 function Die ()
