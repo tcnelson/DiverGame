@@ -12,6 +12,8 @@ TagManager:
   - Trench
   - Trench Wall
   - Ground
+  - Spawn Container
+  - Spawn Point
   layers:
   - Default
   - TransparentFX
