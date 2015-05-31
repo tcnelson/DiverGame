@@ -1,9 +1,6 @@
 #pragma strict
 
 var speed : float;            					// The speed that the player will move at.
-
-var playerHealth : PlayerHealth;				// Reference to player health
-
 var shot : GameObject;							// Reference to the shot game object that the player fires
 var fireRate : float;							// The rate at which the player can generate new shots (cooldown period)
 var shotSpeed : float;							// The speed at which the shot clone will move
@@ -20,6 +17,8 @@ private var damaged : boolean;                  // True when the player gets dam
 private var directionFacing : Vector2;			// The direction the player is facing
 
 private var animator : Animator;				// The animator attached to the player
+
+private var playerHealth : PlayerHealth;		// Reference to player health
 
 function Awake() {
 	playerRigidbody = GetComponent (Rigidbody2D);
