@@ -12359,7 +12359,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1228736201}
   m_Layer: 0
-  m_Name: Statis Enemies
+  m_Name: Static Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
