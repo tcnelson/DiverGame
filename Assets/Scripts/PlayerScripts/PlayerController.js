@@ -6,21 +6,22 @@ var fireRate : float;							// The rate at which the player can generate new sho
 var shotSpeed : float;							// The speed at which the shot clone will move
 
 private var nextFire : float;					// When the next shot can be fired
-private var shotSpawn : Transform;						// Where the shot spawns
+private var shotSpawn : Transform;				// Where the shot spawns
+private var sword : SwordController;			// Reference to sword controller
 
 private var movement : Vector2;    				// The vector to store the direction of the player's movement.
 private var playerRigidbody : Rigidbody2D;      // Reference to the player's rigidbody.
 
 private var isDead : boolean;                   // Whether the player is dead.
 private var damaged : boolean;                  // True when the player gets damaged.
-
-private var directionFacing : Vector2;			// The direction the player is facing
-
-private var animator : Animator;				// The animator attached to the player
-
 private var playerHealth : PlayerHealth;		// Reference to player health
 
+private var directionFacing : Vector2;			// The direction the player is facing
+private var animator : Animator;				// The animator attached to the player
+
+
 function Awake() {
+	sword = GetComponent(SwordController);
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
 	playerHealth = GameObject.FindGameObjectWithTag("GameController").GetComponent(PlayerHealth);
