@@ -1810,6 +1810,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 183746, guid: a4e633e8b0edc954da9017510dd5f098, type: 2}
   spawnTime: 10
+  spawns: {fileID: 0}
+  container: {fileID: 0}
+  maxCount: 1
 --- !u!4 &181396691
 Transform:
   m_ObjectHideFlags: 0
@@ -16801,6 +16804,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 157684, guid: 4431823492f2d4684a987b29c8999ab5, type: 2}
   spawnTime: 4
+  spawns: {fileID: 0}
+  container: {fileID: 0}
+  maxCount: 1
 --- !u!4 &1664744503
 Transform:
   m_ObjectHideFlags: 0
