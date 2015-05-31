@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5032942}
   - 61: {fileID: 6178020}
   - 114: {fileID: 11420062}
+  - 114: {fileID: 11426158}
   m_Layer: 0
   m_Name: 'Anglerfish '
   m_TagString: Untagged
@@ -136,6 +137,22 @@ MonoBehaviour:
   startingHealth: 100
   pathName: Trench Path 1
   pathTime: 15
+--- !u!114 &11426158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414c5f427d49c4e4fad5172ffe85d87d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  health: 0
+  startingHealth: 100
+  pathName: 
+  pathTime: 0
 --- !u!114 &11456466
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,20 +167,6 @@ MonoBehaviour:
   fieldOfViewAngle: 110
   playerInSight: 0
   personalLastSighting: {x: 0, y: 0}
---- !u!114 &11426158
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 414c5f427d49c4e4fad5172ffe85d87d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
-  health: 0
-  startingHealth: 100
 --- !u!212 &21271752
 SpriteRenderer:
   m_ObjectHideFlags: 1

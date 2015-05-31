@@ -162,7 +162,7 @@ MonoBehaviour:
   health: 0
   startingHealth: 100
   pathName: Ghost Ship Path 1
-  pathTime: 0
+  pathTime: 30
 --- !u!212 &21211888
 SpriteRenderer:
   m_ObjectHideFlags: 1
