@@ -8,6 +8,7 @@
   </terraintypes>
   <tile id="0" terrain="2,2,2,2">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Boundary"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Left Corner.png"/>
@@ -17,6 +18,7 @@
   </tile>
   <tile id="1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Boundary"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Bottom Right Corner.png"/>
@@ -26,6 +28,7 @@
   </tile>
   <tile id="2">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Boundary"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Top Left Corner.png"/>
@@ -35,6 +38,7 @@
   </tile>
   <tile id="3">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Boundary"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Border Top Right Corner.png"/>
@@ -44,6 +48,7 @@
   </tile>
   <tile id="4">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Boundary"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Top and Bottom Border.png"/>
@@ -53,6 +58,7 @@
   </tile>
   <tile id="5" terrain="1,1,1,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Middle.png"/>
@@ -62,6 +68,7 @@
   </tile>
   <tile id="6" terrain="1,0,1,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Left Inner Corner.png"/>
@@ -73,6 +80,7 @@
   </tile>
   <tile id="7" terrain="0,1,1,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Right Inner Corner.png"/>
@@ -84,6 +92,7 @@
   </tile>
   <tile id="8" terrain="1,1,1,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Left Inner Corner.png"/>
@@ -95,6 +104,7 @@
   </tile>
   <tile id="9" terrain="1,1,0,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Right Inner Corner.png"/>
@@ -106,6 +116,7 @@
   </tile>
   <tile id="10" terrain="0,1,0,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Left Corner.png"/>
@@ -115,6 +126,7 @@
   </tile>
   <tile id="11" terrain="1,0,0,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Right Corner.png"/>
@@ -124,6 +136,7 @@
   </tile>
   <tile id="12" terrain="0,0,0,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Left Corner.png"/>
@@ -133,6 +146,7 @@
   </tile>
   <tile id="13" terrain="0,0,1,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Right Corner.png"/>
@@ -142,6 +156,7 @@
   </tile>
   <tile id="14" terrain="1,1,0,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Bottom.png"/>
@@ -151,6 +166,7 @@
   </tile>
   <tile id="15" terrain="0,1,0,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Left Side.png"/>
@@ -160,6 +176,7 @@
   </tile>
   <tile id="16" terrain="1,0,1,0">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Right Side.png"/>
@@ -169,6 +186,7 @@
   </tile>
   <tile id="17" terrain="0,0,1,1">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Top.png"/>
@@ -178,6 +196,7 @@
   </tile>
   <tile id="18">
    <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Border/Left and Right Border.png"/>
@@ -186,6 +205,9 @@
    </objectgroup>
   </tile>
   <tile id="19">
+   <properties>
+    <property name="unity:sortingLayerName" value="Ground"/>
+   </properties>
    <image width="32" height="32" source="../Assets/Environment/Sand 1.png"/>
   </tile>
  </tileset>
@@ -210,6 +232,7 @@
  </tileset>
  <layer name="Ground" width="100" height="100">
   <properties>
+   <property name="unity:sortingLayerName" value="Ground"/>
    <property name="unity:tag" value="Ground"/>
   </properties>
   <data encoding="base64" compression="zlib">
@@ -218,6 +241,7 @@
  </layer>
  <layer name="Trench" width="100" height="100">
   <properties>
+   <property name="unity:sortingLayerName" value="Ground"/>
    <property name="unity:tag" value="Trench"/>
   </properties>
   <data encoding="base64" compression="zlib">
@@ -226,6 +250,7 @@
  </layer>
  <layer name="Boundary" width="100" height="100">
   <properties>
+   <property name="unity:sortingLayerName" value="Ground"/>
    <property name="unity:tag" value="Boundary"/>
   </properties>
   <data encoding="base64" compression="zlib">
