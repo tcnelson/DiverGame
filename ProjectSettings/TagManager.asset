@@ -12,6 +12,8 @@ TagManager:
   - Trench
   - Trench Wall
   - Ground
+  - Spawn Container
+  - Spawn Point
   layers:
   - Default
   - TransparentFX
@@ -46,6 +48,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4190484247
+    locked: 0
+  - name: Ground
+    uniqueID: 921238849
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 2527593949
+    locked: 0
+  - name: Enemies
+    uniqueID: 796024873
+    locked: 0
+  - name: UI
+    uniqueID: 43272845
     locked: 0

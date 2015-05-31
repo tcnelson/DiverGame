@@ -1,28 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 5/30/2015 5:27:34 PM-->
+<!--Last exported: 5/30/2015 5:53:11 PM-->
 <Tiled2Unity version="0.9.10.0">
-  <AssignMaterial mesh="mesh_[00]_[19]" material="Sand 1" sortingLayerName="" sortingOrder="0" />
-  <AssignMaterial mesh="mesh_[01]_[15]" material="Trench Left Side" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[05]" material="Trench Middle" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[16]" material="Trench Right Side" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[10]" material="Trench Bottom Left Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[14]" material="Trench Bottom" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[09]" material="Trench Top Right Inner Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[08]" material="Trench Top Left Inner Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[11]" material="Trench Bottom Right Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[12]" material="Trench Top Left Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[07]" material="Trench Bottom Right Inner Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[06]" material="Trench Bottom Left Inner Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[13]" material="Trench Top Right Corner" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[01]_[17]" material="Trench Top" sortingLayerName="" sortingOrder="1" />
-  <AssignMaterial mesh="mesh_[02]_[02]" material="Border Top Left Corner" sortingLayerName="" sortingOrder="2" />
-  <AssignMaterial mesh="mesh_[02]_[04]" material="Top and Bottom Border" sortingLayerName="" sortingOrder="2" />
-  <AssignMaterial mesh="mesh_[02]_[03]" material="Border Top Right Corner" sortingLayerName="" sortingOrder="2" />
-  <AssignMaterial mesh="mesh_[02]_[18]" material="Left and Right Border" sortingLayerName="" sortingOrder="2" />
-  <AssignMaterial mesh="mesh_[02]_[00]" material="Border Bottom Left Corner" sortingLayerName="" sortingOrder="2" />
-  <AssignMaterial mesh="mesh_[02]_[01]" material="Border Bottom Right Corner" sortingLayerName="" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[00]_[19]" material="Sand 1" sortingLayerName="Ground" sortingOrder="0" />
+  <AssignMaterial mesh="mesh_[01]_[15]" material="Trench Left Side" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[05]" material="Trench Middle" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[16]" material="Trench Right Side" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[10]" material="Trench Bottom Left Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[14]" material="Trench Bottom" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[09]" material="Trench Top Right Inner Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[08]" material="Trench Top Left Inner Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[11]" material="Trench Bottom Right Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[12]" material="Trench Top Left Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[07]" material="Trench Bottom Right Inner Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[06]" material="Trench Bottom Left Inner Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[13]" material="Trench Top Right Corner" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[01]_[17]" material="Trench Top" sortingLayerName="Ground" sortingOrder="1" />
+  <AssignMaterial mesh="mesh_[02]_[02]" material="Border Top Left Corner" sortingLayerName="Ground" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[02]_[04]" material="Top and Bottom Border" sortingLayerName="Ground" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[02]_[03]" material="Border Top Right Corner" sortingLayerName="Ground" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[02]_[18]" material="Left and Right Border" sortingLayerName="Ground" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[02]_[00]" material="Border Bottom Left Corner" sortingLayerName="Ground" sortingOrder="2" />
+  <AssignMaterial mesh="mesh_[02]_[01]" material="Border Bottom Right Corner" sortingLayerName="Ground" sortingOrder="2" />
   <Prefab name="Diver Game Map" numTilesWide="100" numTilesHigh="100" tileWidth="32" tileHeight="32" exportScale="1" mapWidthInPixels="3200" mapHeightInPixels="3200">
     <GameObject name="Ground_00" tag="Ground">
       <GameObject copy="mesh_[00]_[19]" />

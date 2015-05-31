@@ -81,7 +81,7 @@ function FixedUpdate ()
     if(playerHealth.currentHealth <= 0 && !isDead)
     {
         // ... it should die.
-        Death ();
+        Die ();
     }
 }
 
@@ -156,7 +156,7 @@ function SetAnimationState ()
 	}
 }
 
-function Death ()
+function Die ()
 {
     // Set the death flag so this function won't be called again.
     isDead = true;
