@@ -566,7 +566,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046046766}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &37833461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2844,6 +2844,35 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 462998, guid: 9ff5c095227634c00bfc80f4c4377df1, type: 2}
   m_PrefabInternal: {fileID: 190288954}
+--- !u!1 &280901046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 280901047}
+  m_Layer: 0
+  m_Name: Trench Fish
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280901047
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 280901046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2130463604}
+  - {fileID: 324984833}
+  m_Father: {fileID: 1228736201}
+  m_RootOrder: 0
 --- !u!1001 &291416025
 Prefab:
   m_ObjectHideFlags: 0
@@ -3394,7 +3423,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046046766}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &317341918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3476,8 +3505,8 @@ Transform:
   m_LocalPosition: {x: -1701.58777, y: 1019.15723, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1046046766}
-  m_RootOrder: 0
+  m_Father: {fileID: 280901047}
+  m_RootOrder: 1
 --- !u!114 &324984834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3881,15 +3910,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1228736201}
+    m_TransformParent: {fileID: 548964168}
     m_Modifications:
     - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1516
+      value: 1446
       objectReference: {fileID: 0}
     - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -334
+      value: -67
       objectReference: {fileID: 0}
     - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3913,7 +3942,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21246304, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 796024873
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
@@ -5369,6 +5402,77 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 410210, guid: 9fb1886bc422b447fb9cac55f95f66b0, type: 2}
   m_PrefabInternal: {fileID: 748146239}
+--- !u!1 &548964167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 548964168}
+  - 114: {fileID: 548964170}
+  - 114: {fileID: 548964169}
+  m_Layer: 0
+  m_Name: Coral 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548964168
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548964167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1708837642}
+  - {fileID: 1200038269}
+  m_Father: {fileID: 1228736201}
+  m_RootOrder: 1
+--- !u!114 &548964169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548964167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 2
+  pathColor: {r: .986207008, g: 1, b: 0, a: 1}
+  nodes:
+  - {x: 1399.35315, y: -76.1654358, z: 0}
+  - {x: 1523.30884, y: -276.286438, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 2
+  pathVisible: 1
+--- !u!114 &548964170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548964167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 1
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 1577.07251, y: -258.365112, z: 0}
+  - {x: 1469.54492, y: -64.2178802, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
 --- !u!1001 &549632074
 Prefab:
   m_ObjectHideFlags: 0
@@ -10975,7 +11079,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 324984833}
   - {fileID: 1220414800}
   - {fileID: 1978834925}
   - {fileID: 317341917}
@@ -12535,8 +12638,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f458b29ac26ea5f458d707fd0de0f4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: 
-  pathTime: 0
+  pathName: Coral Path 2
+  pathTime: 10
   previousLoc: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
 --- !u!4 &1203245134 stripped
@@ -12620,7 +12723,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046046766}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &1220414801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12708,9 +12811,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2130463604}
-  - {fileID: 1708837642}
-  - {fileID: 1200038269}
+  - {fileID: 280901047}
+  - {fileID: 548964168}
   - {fileID: 2096020008}
   - {fileID: 1022303959}
   - {fileID: 1042663506}
@@ -14133,15 +14235,15 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1228736201}
+    m_TransformParent: {fileID: 548964168}
     m_Modifications:
     - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1490
+      value: 1608
       objectReference: {fileID: 0}
     - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -206
+      value: -255
       objectReference: {fileID: 0}
     - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
       propertyPath: m_LocalPosition.z
@@ -14165,7 +14267,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21287756, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 796024873
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
@@ -17181,7 +17287,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 1228736201}
+    m_TransformParent: {fileID: 280901047}
     m_Modifications:
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_LocalPosition.x
@@ -17561,8 +17667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f458b29ac26ea5f458d707fd0de0f4c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: 
-  pathTime: 0
+  pathName: Coral Path 1
+  pathTime: 10
   previousLoc: {x: 0, y: 0}
   velocity: {x: 0, y: 0}
 --- !u!4 &1714243520 stripped
@@ -20430,7 +20536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046046766}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1978834926
 MonoBehaviour:
   m_ObjectHideFlags: 0
