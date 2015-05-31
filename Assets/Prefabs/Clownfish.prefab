@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21287756}
   - 61: {fileID: 6187360}
   - 95: {fileID: 9597174}
+  - 50: {fileID: 5012764}
   - 114: {fileID: 11482850}
   m_Layer: 0
   m_Name: Clownfish
@@ -31,6 +32,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5012764
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141588}
+  m_Mass: 1
+  m_LinearDrag: .0500000007
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6187360
 BoxCollider2D:
   m_ObjectHideFlags: 1
