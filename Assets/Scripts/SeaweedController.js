@@ -1,10 +1,10 @@
 ﻿#pragma strict
 
-private var collider : Collider2D;
+private var myCollider : Collider2D;
 private var largeScale : Vector3;
 
 function Awake() {
-	collider = GetComponent(Collider2D);
+	myCollider = GetComponent(Collider2D);
 	largeScale = transform.localScale;
 }
 
@@ -13,13 +13,13 @@ function Hit() {
 }
 
 function Shrink() {
-	collider.isTrigger = false;
-	transform.localScale = largeScale * 0.2;
+	myCollider.isTrigger = true;				// allow player to walk through
+	transform.localScale = largeScale * 0.2;	// make it really small
 	
 	Invoke("Grow", 10);
 }
 
 function Grow() {
-	collider.isTrigger = true;
-	transform.localScale = largeScale;
+	myCollider.isTrigger = false;				// disallow player to walk through
+	transform.localScale = largeScale;			// return to normal size
 }

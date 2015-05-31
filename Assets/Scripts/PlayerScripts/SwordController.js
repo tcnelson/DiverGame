@@ -2,8 +2,6 @@
 
 var isActive : boolean = false;
 
-
-
 function Start () {
 
 }
@@ -15,16 +13,18 @@ function Update () {
 function Swing() {
 }
 
-function OnCollisionEnter2D(other : Collider2D) {
+function OnTriggerStay2D(other : Collider2D) {
+	if (!isActive) return;
+
 	if (other.transform.tag == "Seaweed") {
-		var controller = other.GetComponent(SeaweedController);
-		controller.Hit();
+		var seaweedController = other.GetComponent(SeaweedController);
+		seaweedController.Hit();
 		return;
 	}
 	
 	if (other.transform.tag == "Enemy") {
-		var controller = other.GetComponent(EnemyController);
-		controller.Damage(20);
+		var enemyController = other.GetComponent(EnemyController);
+		enemyController.Damage(100 * Time.deltaTime);
 		return;
 	}
 }
