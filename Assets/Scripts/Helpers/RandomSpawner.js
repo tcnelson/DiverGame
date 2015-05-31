@@ -5,6 +5,7 @@ var spawnTime : float = 4f;            		// How long between each spawn.
 var spawns : GameObject;
 
 var container : Transform;
+var maxCount : int = 1;
 
 private var spawnPoints : Transform[]; 		// An array of the spawn points this oxygen can spawn from.
 
@@ -30,7 +31,7 @@ function Spawn ()
 
 	var parent = spawnPoints[spawnPointIndex];
 	var children = container.GetComponentsInChildren(Transform);
-	if (children.Length > 1) {
+	if (children.Length > maxCount + 1) {
 		return;
 	}
 

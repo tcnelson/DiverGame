@@ -696,6 +696,7 @@ MonoBehaviour:
   spawnTime: 10
   spawns: {fileID: 1804733517}
   container: {fileID: 1611555486}
+  maxCount: 3
 --- !u!4 &181396691
 Transform:
   m_ObjectHideFlags: 0
@@ -1065,6 +1066,8 @@ GameObject:
   - 114: {fileID: 324984836}
   - 114: {fileID: 324984835}
   - 114: {fileID: 324984834}
+  - 114: {fileID: 324984839}
+  - 114: {fileID: 324984838}
   m_Layer: 0
   m_Name: Trench Paths
   m_TagString: Untagged
@@ -1118,7 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathName: New Path 4
+  pathName: Trench Path 5
   pathColor: {r: 0, g: 1, b: 1, a: 1}
   nodes:
   - {x: 1109.40869, y: -3117.47803, z: 0}
@@ -1198,6 +1201,53 @@ MonoBehaviour:
   - {x: 2052.38281, y: -1638.29016, z: 0}
   - {x: 1745.05505, y: -1264.00928, z: 0}
   - {x: 1609.95374, y: -1439.30457, z: 0}
+  nodeCount: 5
+  initialized: 1
+  initialName: New Path 1
+  pathVisible: 1
+--- !u!114 &324984838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324984831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Trench Path 7
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 92.7937622, y: -2202.99634, z: 0}
+  - {x: 281.818604, y: -2357.65283, z: 0}
+  - {x: 756.098572, y: -2055.21362, z: 0}
+  - {x: 721.730469, y: -2199.55933, z: 0}
+  - {x: 663.304871, y: -2051.77637, z: 0}
+  - {x: 924.502258, y: -1804.32605, z: 0}
+  nodeCount: 6
+  initialized: 1
+  initialName: New Path 2
+  pathVisible: 1
+--- !u!114 &324984839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 324984831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Trench Path 6
+  pathColor: {r: .986206889, g: 1, b: 0, a: 1}
+  nodes:
+  - {x: 3089.69336, y: -982.928162, z: 0}
+  - {x: 2759.76001, y: -982.928284, z: 0}
+  - {x: 2752.88647, y: -1134.14783, z: 0}
+  - {x: 2969.40454, y: -1237.25232, z: 0}
+  - {x: 3082.82007, y: -1323.17065, z: 0}
   nodeCount: 5
   initialized: 1
   initialName: New Path 1
@@ -1594,6 +1644,7 @@ MonoBehaviour:
   spawnTime: 4
   spawns: {fileID: 524105027}
   container: {fileID: 429180819}
+  maxCount: 1
 --- !u!1001 &538887348
 Prefab:
   m_ObjectHideFlags: 0
@@ -5825,6 +5876,7 @@ MonoBehaviour:
   spawnTime: 4
   spawns: {fileID: 1551402026}
   container: {fileID: 691807206}
+  maxCount: 1
 --- !u!4 &1664744503
 Transform:
   m_ObjectHideFlags: 0
@@ -6768,6 +6820,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1884681326}
   - 114: {fileID: 1884681327}
+  - 114: {fileID: 1884681328}
   m_Layer: 5
   m_Name: O2Slider
   m_TagString: Untagged
@@ -6843,6 +6896,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1884681328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1884681325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b662d73e477604d850836367030b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1920564407
 GameObject:
   m_ObjectHideFlags: 0
