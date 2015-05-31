@@ -72,11 +72,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Left Inner Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.625" y="-1.875">
-     <polygon points="0,0 0,36.375 36.25,35.75 35.75,20.25 14,19.375 14.125,0.25"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="7" terrain="0,1,1,1">
    <properties>
@@ -84,11 +80,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Bottom Right Inner Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.625" y="19.625">
-     <polygon points="0,0 0,14.375 35.375,13.875 35.5,-21.25 19.5,-21.75 19.75,-0.375"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="8" terrain="1,1,1,0">
    <properties>
@@ -96,11 +88,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Left Inner Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.75" y="-1.75">
-     <polygon points="0,0 0.25,35.25 16.75,35.625 16.375,15.25 36.25,14.625 35.25,0.75"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="9" terrain="1,1,0,1">
    <properties>
@@ -108,11 +96,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Inner Corners/Trench Top Right Inner Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.25" y="-1.25">
-     <polygon points="0,0 0.125,16.125 19.375,15.75 21,35.25 34.625,34.875 34.375,0.125"/>
-    </object>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="10" terrain="0,1,0,0">
    <properties>
@@ -120,9 +104,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Left Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="14.5" y="-1.625" width="19.25" height="16.25"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="11" terrain="1,0,0,0">
    <properties>
@@ -130,9 +112,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Bottom Right Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-2.25" y="-2" width="17.75" height="16"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="12" terrain="0,0,0,1">
    <properties>
@@ -140,9 +120,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Left Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="16.5" y="19.75" width="17.125" height="13.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="13" terrain="0,0,1,0">
    <properties>
@@ -150,9 +128,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Outer Corners/Trench Top Right Corner.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.625" y="17" width="18.375" height="16.5"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="14" terrain="1,1,0,0">
    <properties>
@@ -160,9 +136,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Bottom.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.375" y="-1.125" width="34.875" height="16.375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="15" terrain="0,1,0,1">
    <properties>
@@ -170,9 +144,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Left Side.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="17.375" y="-2" width="16.5" height="35.5"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="16" terrain="1,0,1,0">
    <properties>
@@ -180,9 +152,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Right Side.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.25" y="-1.5" width="17.375" height="34.875"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="17" terrain="0,0,1,1">
    <properties>
@@ -190,9 +160,7 @@
     <property name="unity:tag" value="Trench Wall"/>
    </properties>
    <image width="32" height="32" source="../Assets/Environment/Trench/Trench Straight Edges/Trench Top.png"/>
-   <objectgroup draworder="index">
-    <object id="0" x="-1.5" y="16.875" width="35.125" height="16.375"/>
-   </objectgroup>
+   <objectgroup draworder="index"/>
   </tile>
   <tile id="18">
    <properties>
