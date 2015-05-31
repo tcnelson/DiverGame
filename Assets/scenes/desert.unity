@@ -3080,8 +3080,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2130463604}
   - {fileID: 324984833}
+  - {fileID: 2130463604}
   - {fileID: 839657162}
   - {fileID: 1521079030}
   - {fileID: 1709766717}
@@ -3813,7 +3813,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 280901047}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!114 &324984834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9291,6 +9291,10 @@ Prefab:
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_LocalScale.y
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 124578, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
+      propertyPath: m_Name
+      value: Anglerfish 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
@@ -18091,11 +18095,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 499726, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 124578, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
+      propertyPath: m_Name
+      value: Anglerfish 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
@@ -18279,11 +18287,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11420062, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: pathName
       value: Trench Path 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 124578, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
+      propertyPath: m_Name
+      value: Anglerfish 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
@@ -19996,11 +20008,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11420062, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: pathName
       value: Trench Path 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 124578, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
+      propertyPath: m_Name
+      value: Anglerfish 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
@@ -22035,11 +22051,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 452378, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11420062, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
       propertyPath: pathName
       value: Trench Path 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 124578, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
+      propertyPath: m_Name
+      value: Anglerfish 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af61c9f9b8fb34ac8b3b0071769abcfd, type: 2}
