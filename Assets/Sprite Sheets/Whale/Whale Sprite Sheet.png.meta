@@ -1,9 +1,17 @@
 fileFormatVersion: 2
 guid: 89075a991b6c3284984b2f35c9e93f3b
-timeCreated: 1433036616
+timeCreated: 1433093340
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Whale Sprite Sheet_0
+    21300002: Whale Sprite Sheet_1
+    21300004: Whale Sprite Sheet_2
+    21300006: Whale Sprite Sheet_3
+    21300008: Whale Sprite Sheet_4
+    21300010: Whale Sprite Sheet_5
+    21300012: Whale Sprite Sheet_6
+    21300014: Whale Sprite Sheet_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +38,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +56,87 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Whale Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 111
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 111
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 2
+        width: 111
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 111
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2
+        width: 111
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 111
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2
+        width: 111
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Whale Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0
+        width: 111
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
