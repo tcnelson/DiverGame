@@ -3534,6 +3534,75 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 410210, guid: 9fb1886bc422b447fb9cac55f95f66b0, type: 2}
   m_PrefabInternal: {fileID: 312420455}
+--- !u!1001 &313277956
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1171909321}
+    m_Modifications:
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 383
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2617
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21287756, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 796024873
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &313277957 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 432690, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+  m_PrefabInternal: {fileID: 313277956}
+--- !u!1 &313277958 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 141588, guid: 4eec33b98daee4bea80b30415b57d9b3, type: 2}
+  m_PrefabInternal: {fileID: 313277956}
+--- !u!114 &313277959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313277958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f458b29ac26ea5f458d707fd0de0f4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 5.2
+  pathTime: 10
+  previousLoc: {x: 0, y: 0}
+  velocity: {x: 0, y: 0}
 --- !u!1001 &313584655
 Prefab:
   m_ObjectHideFlags: 0
@@ -8471,6 +8540,75 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 412652, guid: 083f63b50d5994e11b7022b42c31d58f, type: 2}
   m_PrefabInternal: {fileID: 796332241}
+--- !u!1001 &797897201
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1171909321}
+    m_Modifications:
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2813
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 21246304, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 796024873
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &797897202 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 418564, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+  m_PrefabInternal: {fileID: 797897201}
+--- !u!1 &797897203 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 190628, guid: 96133515fe527471a885a3c0b50a9164, type: 2}
+  m_PrefabInternal: {fileID: 797897201}
+--- !u!114 &797897204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797897203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f458b29ac26ea5f458d707fd0de0f4c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 5.1
+  pathTime: 10
+  previousLoc: {x: 0, y: 0}
+  velocity: {x: 0, y: 0}
 --- !u!4 &799826544 stripped
 Transform:
   m_PrefabParentObject: {fileID: 410210, guid: 9fb1886bc422b447fb9cac55f95f66b0, type: 2}
@@ -12881,6 +13019,77 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 412652, guid: 083f63b50d5994e11b7022b42c31d58f, type: 2}
   m_PrefabInternal: {fileID: 1166927968}
+--- !u!1 &1171909320
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1171909321}
+  - 114: {fileID: 1171909323}
+  - 114: {fileID: 1171909322}
+  m_Layer: 0
+  m_Name: Coral 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1171909321
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171909320}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 797897202}
+  - {fileID: 313277957}
+  m_Father: {fileID: 1228736201}
+  m_RootOrder: 8
+--- !u!114 &1171909322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171909320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 5.2
+  pathColor: {r: 1, g: 0, b: 0, a: 1}
+  nodes:
+  - {x: 375.134033, y: -2626.30933, z: 0}
+  - {x: 82.2914429, y: -2774.89502, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 6
+  pathVisible: 1
+--- !u!114 &1171909323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1171909320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bffa8aa898b437183cd5617f7b5303, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathName: Coral Path 5.1
+  pathColor: {r: 0, g: 1, b: 1, a: 1}
+  nodes:
+  - {x: 135.506439, y: -2817.39404, z: 0}
+  - {x: 286.618347, y: -2578.24829, z: 0}
+  nodeCount: 2
+  initialized: 1
+  initialName: New Path 5
+  pathVisible: 1
 --- !u!1001 &1179544559
 Prefab:
   m_ObjectHideFlags: 0
@@ -13239,6 +13448,7 @@ Transform:
   - {fileID: 67142023}
   - {fileID: 233511682}
   - {fileID: 509515875}
+  - {fileID: 1171909321}
   m_Father: {fileID: 958777869}
   m_RootOrder: 2
 --- !u!1001 &1230340738
