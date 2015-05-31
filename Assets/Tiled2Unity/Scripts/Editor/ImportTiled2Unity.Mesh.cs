@@ -328,6 +328,8 @@ namespace Tiled2Unity
                 map.TileWidth = ImportUtils.GetAttributeAsInt(goXml, "tileWidth");
                 map.TileHeight = ImportUtils.GetAttributeAsInt(goXml, "tileHeight");
                 map.ExportScale = ImportUtils.GetAttributeAsFloat(goXml, "exportScale");
+                map.MapWidthInPixels = ImportUtils.GetAttributeAsInt(goXml, "mapWidthInPixels");
+                map.MapHeightInPixels = ImportUtils.GetAttributeAsInt(goXml, "mapHeightInPixels");
             }
             catch
             {

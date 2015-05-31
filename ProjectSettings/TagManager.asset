@@ -9,6 +9,9 @@ TagManager:
   - ShotSpawn
   - Enemy
   - EnemySight
+  - Trench
+  - Trench Wall
+  - Ground
   layers:
   - Default
   - TransparentFX
