@@ -141,7 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 145854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00f334fd03bba845ae3842d6630796c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ef3d46d6804a5446aa3abe04eeb8e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fieldOfViewAngle: 110
@@ -161,6 +161,8 @@ MonoBehaviour:
   speed: 1
   health: 0
   startingHealth: 100
+  pathName: Ghost Ship Path 1
+  pathTime: 0
 --- !u!212 &21211888
 SpriteRenderer:
   m_ObjectHideFlags: 1

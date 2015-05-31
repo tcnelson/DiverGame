@@ -5,7 +5,7 @@ public var playerInSight : boolean;                     // Whether or not the pl
 public var personalLastSighting : Vector2;              // Last place this enemy spotted the player.
 
 private var player : GameObject;
-private var col : CircleCollider2D;                     // Reference to the sphere collider trigger component.
+private var col : CircleCollider2D;                     // Reference to the circle collider trigger component.
 private var layerMask : int;
 
 
