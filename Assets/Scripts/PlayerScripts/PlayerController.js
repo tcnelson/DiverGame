@@ -133,25 +133,26 @@ function Move (h : float, v : float)
     }
     
     // set animation movement states
-    if (movement.y > 0)
-	{
-	    animator.SetInteger("Direction", 2);
-	}
-	else if (movement.y < 0)
-	{
-	    animator.SetInteger("Direction", 0);
-	}
-	else if (movement.x > 0)
+	if (movement.x > 0)			//right
 	{
 	    animator.SetInteger("Direction", 3);
 	}
-	else if (movement.x < 0)
+	else if (movement.x < 0)	//left
 	{
 	    animator.SetInteger("Direction", 1);
 	}
+	else if (movement.y < 0) 	//down
+	{
+	    animator.SetInteger("Direction", 0);
+	}
+    else if (movement.y > 0)	// up
+	{
+	    animator.SetInteger("Direction", 2);
+	}
 }
 
-public function Heal (amount : float) {
+public function Heal (amount : float) 
+{
 	playerHealth.Heal(amount);
 }
 
@@ -171,4 +172,5 @@ function Die ()
 {
     // Set the death flag so this function won't be called again.
     isDead = true;
+    animator.SetBool("IsAlive", false);
 }
