@@ -9005,7 +9005,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1426683639}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!1001 &797897201
 Prefab:
   m_ObjectHideFlags: 0
@@ -13159,7 +13159,7 @@ AudioSource:
   rolloffMode: 0
   BypassEffects: 0
   BypassListenerEffects: 0
-  BypassReverbZones: 0
+  BypassReverbZones: 1
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -15515,8 +15515,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 12bf7370158784397b6d7f0994745947, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
+  m_PlayOnAwake: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16577,7 +16577,6 @@ Transform:
   - {fileID: 1049769949}
   - {fileID: 773128295}
   - {fileID: 1149639267}
-  - {fileID: 1357861141}
   - {fileID: 1840485037}
   - {fileID: 797743837}
   - {fileID: 1824942461}
@@ -21268,7 +21267,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1426683639}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1001 &1829305826
 Prefab:
   m_ObjectHideFlags: 0
@@ -21387,7 +21386,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1426683639}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1 &1851936417
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,12 +19,23 @@ private var playerHealth : PlayerHealth;		// Reference to player health
 private var directionFacing : Vector2;			// The direction the player is facing
 private var animator : Animator;				// The animator attached to the player
 
+private var swordSound : AudioSource;
+private var gunSound : AudioSource;
+private var staticSound: AudioSource;
+private var breathSound: AudioSource;
+
 
 function Awake() {
 	sword = GetComponentInChildren(SwordController);
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
 	playerHealth = GameObject.FindGameObjectWithTag("GameController").GetComponent(PlayerHealth);
+	
+	// audio
+	swordSound = GameObject.FindWithTag("Sword").GetComponent(AudioSource);
+	gunSound = GameObject.FindWithTag("Gun").GetComponent(AudioSource);
+	staticSound = GameObject.FindWithTag("Static").GetComponent(AudioSource);
+	breathSound = GameObject.FindWithTag("Breath").GetComponent(AudioSource);
 	
 	// Get location for spawning shot
 	for (var child in GetComponentsInChildren (Transform)) {
@@ -63,6 +74,16 @@ function Update () {
     	// reward manual triggers, remove half remaining firetime
     	 nextFire = Time.time + 0.5 * (nextFire - Time.time);
     }
+    
+    // Adjust the breathing volume once player health gets low
+    if (playerHealth.currentHealth < 20 && playerHealth.currentHealth > 10){
+    	breathSound.volume = 0.1;
+    	staticSound.volume = 0.5;
+    }
+    if (playerHealth.currentHealth < 11) {
+    	breathSound.volume = 0.05;
+    	staticSound.volume = 1;
+    }
 }
 
 function Shoot() {
@@ -84,6 +105,7 @@ function Shoot() {
     shotClone.transform.Rotate(Vector3.forward, 90);
     shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
     shotCloneBody.AddTorque(250);
+    gunSound.Play();
     
     // set held weapon
     animator.SetInteger("Weapon", 2);
@@ -94,6 +116,7 @@ function StartSlashing() {
 		return;
 
 	sword.isActive = true;
+	swordSound.Play();
 	Invoke("FinishSlashing", 0.5);
 	
 	// set held weapon
@@ -207,4 +230,6 @@ function Die ()
     // Set the death flag so this function won't be called again.
     isDead = true;
     animator.SetBool("IsAlive", false);
+    staticSound.mute = true;
+    breathSound.mute = true;
 }
