@@ -58,8 +58,9 @@ function Update () {
 		// gogogo
 		Chase();
     }
-                
-    spriteRenderer.color = Color(1f, 1f, 1f, (health / startingHealth));
+    
+    var percent = 1 - (startingHealth - health) / startingHealth;
+    spriteRenderer.color = Color(1f, percent, percent, 1f);
     
     SetAnimationState ();
 }
