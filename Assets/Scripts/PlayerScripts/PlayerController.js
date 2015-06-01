@@ -84,10 +84,12 @@ function StartSlashing() {
 	
 	// set held weapon
     animator.SetInteger("Weapon", 1);
+    animator.SetBool("Slashing", true);
 }
 
 function FinishSlashing() {
 	sword.isActive = false;
+	animator.SetBool("Slashing", false);
 }
 
 function FixedUpdate ()
