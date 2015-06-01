@@ -13,7 +13,10 @@ function Awake () {
 }
 
 function OnTriggerEnter2D(hit : Collider2D){
+	var audio : AudioSource = GetComponent (AudioSource);
+	
 	if (hit.transform.tag == "Player" ) {			// Change sprite to open version on contact with player's collider
+		audio.Play();
 		spriteRenderer.sprite = openSprite;
 		score.Add(100);
 		Destroy(gameObject, deleteDelay);			// Destroy treasure chest game object after a delay
