@@ -346,6 +346,10 @@ Prefab:
       propertyPath: pathTime
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 11430586, guid: 17efcca22ed354b4d96dfc7db39363e7, type: 2}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 17efcca22ed354b4d96dfc7db39363e7, type: 2}
   m_IsPrefabParent: 0
@@ -1781,7 +1785,7 @@ GameObject:
   - 4: {fileID: 124593613}
   - 58: {fileID: 124593615}
   - 114: {fileID: 124593614}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2198,6 +2202,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 498384, guid: ff1fe6ad344c74a3a83f06f7c5265afc, type: 2}
       propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11427920, guid: ff1fe6ad344c74a3a83f06f7c5265afc, type: 2}
+      propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
