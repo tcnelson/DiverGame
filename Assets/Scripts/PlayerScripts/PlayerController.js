@@ -66,6 +66,9 @@ function Update () {
 }
 
 function Shoot() {
+	if (isDead)
+		return;
+
 	nextFire = Time.time + fireRate;
     var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
     var shotCloneBody : Rigidbody2D = shotClone.GetComponent(Rigidbody2D);
@@ -79,6 +82,9 @@ function Shoot() {
 }
 
 function StartSlashing() {
+	if (isDead)
+		return;
+
 	sword.isActive = true;
 	Invoke("FinishSlashing", 0.5);
 	
@@ -124,6 +130,9 @@ function CheckDirection (h : float, v : float) {
 
 function Move (h : float, v : float)
 {
+	if (isDead)
+		return;
+
     // Set the movement vector based on the axis input.
     movement.Set(h, v);
     
@@ -161,11 +170,17 @@ function Move (h : float, v : float)
 
 public function Heal (amount : float) 
 {
+	if (isDead)
+		return;
+		
 	playerHealth.Heal(amount);
 }
 
 public function Damage (amount : float)
 {
+	if (isDead)
+		return;
+
     // Set the damaged flag so the screen will flash.
     damaged = true;
 
@@ -178,6 +193,9 @@ public function Damage (amount : float)
 
 function Die ()
 {
+	if (isDead)
+		return;
+		
     // Set the death flag so this function won't be called again.
     isDead = true;
     animator.SetBool("IsAlive", false);
