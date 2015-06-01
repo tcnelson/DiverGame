@@ -2749,7 +2749,7 @@ GameObject:
   - 82: {fileID: 220430038}
   m_Layer: 8
   m_Name: Breathe
-  m_TagString: Untagged
+  m_TagString: Breath
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10132,7 +10132,7 @@ GameObject:
   - 82: {fileID: 888470787}
   m_Layer: 8
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12828,7 +12828,7 @@ GameObject:
   - 82: {fileID: 1110352493}
   m_Layer: 8
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15011,7 +15011,7 @@ GameObject:
   - 82: {fileID: 1354196209}
   m_Layer: 8
   m_Name: Static
-  m_TagString: Untagged
+  m_TagString: Static
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15041,7 +15041,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
