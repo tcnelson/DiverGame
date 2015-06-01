@@ -1,9 +1,44 @@
 fileFormatVersion: 2
-guid: 16375b7a24eee45d6a7e8e7dd485ceff
-timeCreated: 1433126749
+guid: cfbd53c12c77fb94ea6f64ea7e4127e1
+timeCreated: 1433121320
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Diver With Swordfish Sprite Sheet_0
+    21300002: Diver With Swordfish Sprite Sheet_1
+    21300004: Diver With Swordfish Sprite Sheet_2
+    21300006: Diver With Swordfish Sprite Sheet_3
+    21300008: Diver With Swordfish Sprite Sheet_4
+    21300010: Diver With Swordfish Sprite Sheet_5
+    21300012: Diver With Swordfish Sprite Sheet_6
+    21300014: Diver With Swordfish Sprite Sheet_7
+    21300016: Diver With Swordfish Sprite Sheet_8
+    21300018: Diver With Swordfish Sprite Sheet_9
+    21300020: Diver With Swordfish Sprite Sheet_10
+    21300022: Diver With Swordfish Sprite Sheet_11
+    21300024: Diver With Swordfish Sprite Sheet_12
+    21300026: Diver With Swordfish Sprite Sheet_13
+    21300028: Diver With Swordfish Sprite Sheet_14
+    21300030: Diver With Swordfish Sprite Sheet_15
+    21300032: Diver With Swordfish Sprite Sheet_16
+    21300034: Diver With Swordfish Sprite Sheet_17
+    21300036: Diver With Swordfish Sprite Sheet_18
+    21300038: Diver With Swordfish Sprite Sheet_19
+    21300040: Diver With Swordfish Sprite Sheet_20
+    21300042: Diver With Swordfish Sprite Sheet_28
+    21300044: Diver With Swordfish Sprite Sheet_29
+    21300046: Diver With Swordfish Sprite Sheet_30
+    21300048: Diver With Swordfish Sprite Sheet_31
+    21300050: Diver With Swordfish Sprite Sheet_32
+    21300052: Diver With Swordfish Sprite Sheet_33
+    21300054: Diver With Swordfish Sprite Sheet_34
+    21300056: Diver With Swordfish Sprite Sheet_21
+    21300058: Diver With Swordfish Sprite Sheet_22
+    21300060: Diver With Swordfish Sprite Sheet_23
+    21300062: Diver With Swordfish Sprite Sheet_24
+    21300064: Diver With Swordfish Sprite Sheet_25
+    21300066: Diver With Swordfish Sprite Sheet_26
+    21300068: Diver With Swordfish Sprite Sheet_27
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +65,305 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Diver With Swordfish Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 32
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 32
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Swordfish Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 64
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -40,9 +40,9 @@ Rigidbody2D:
   m_GameObject: {fileID: 131254}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 0
   m_GravityScale: 0
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -82,6 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e657e793d0544fc19e22c7c0e7ecfd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 20
 --- !u!212 &21228740
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1fdd4e6abd8de46e5aaf8d10e67d7c2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d61cc4161bf57b7459a87ebdb55cf254, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

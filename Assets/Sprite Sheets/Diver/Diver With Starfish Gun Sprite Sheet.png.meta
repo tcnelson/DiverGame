@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 3fcab4d35b19f4fa9b09d53d31f5b002
-timeCreated: 1433126750
+guid: 34013ef0a419dc446943d6428847be3b
+timeCreated: 1433123443
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Diver With Starfish Gun Sprite Sheet_0
+    21300002: Diver With Starfish Gun Sprite Sheet_1
+    21300004: Diver With Starfish Gun Sprite Sheet_2
+    21300006: Diver With Starfish Gun Sprite Sheet_3
+    21300008: Diver With Starfish Gun Sprite Sheet_4
+    21300010: Diver With Starfish Gun Sprite Sheet_5
+    21300012: Diver With Starfish Gun Sprite Sheet_6
+    21300014: Diver With Starfish Gun Sprite Sheet_7
+    21300016: Diver With Starfish Gun Sprite Sheet_8
+    21300018: Diver With Starfish Gun Sprite Sheet_9
+    21300020: Diver With Starfish Gun Sprite Sheet_10
+    21300022: Diver With Starfish Gun Sprite Sheet_11
+    21300024: Diver With Starfish Gun Sprite Sheet_12
+    21300026: Diver With Starfish Gun Sprite Sheet_13
+    21300028: Diver With Starfish Gun Sprite Sheet_14
+    21300030: Diver With Starfish Gun Sprite Sheet_15
+    21300032: Diver With Starfish Gun Sprite Sheet_16
+    21300034: Diver With Starfish Gun Sprite Sheet_17
+    21300036: Diver With Starfish Gun Sprite Sheet_18
+    21300038: Diver With Starfish Gun Sprite Sheet_19
+    21300040: Diver With Starfish Gun Sprite Sheet_20
+    21300042: Diver With Starfish Gun Sprite Sheet_21
+    21300044: Diver With Starfish Gun Sprite Sheet_22
+    21300046: Diver With Starfish Gun Sprite Sheet_23
+    21300048: Diver With Starfish Gun Sprite Sheet_24
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,25 +55,275 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Diver With Starfish Gun Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 64
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 32
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Diver With Starfish Gun Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
