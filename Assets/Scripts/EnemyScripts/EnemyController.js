@@ -10,6 +10,7 @@ private var patrol : Vector3[];
 
 private var player : GameObject;
 private var playerController : PlayerController;
+private var score : Score;
 
 private var enemySight : EnemySight;
 private var chasing : boolean = false;
@@ -21,6 +22,7 @@ private var animator : Animator;
 
 function Awake () {
 
+	score = GameObject.FindGameObjectWithTag("GameController").GetComponent(Score);
 	player = GameObject.FindGameObjectWithTag("Player");
 	playerController = player.GetComponent(PlayerController);
 	
@@ -56,8 +58,9 @@ function Update () {
 		// gogogo
 		Chase();
     }
-                
-    spriteRenderer.color = Color(1f, 1f, 1f, (health / startingHealth));
+    
+    var percent = 1 - (startingHealth - health) / startingHealth;
+    spriteRenderer.color = Color(1f, percent, percent, 1f);
     
     SetAnimationState ();
 }
@@ -93,6 +96,7 @@ function Damage(amount : float) {
 }
 
 function Die() {
+	score.Add(150);
 	Destroy(gameObject);
 }
 
