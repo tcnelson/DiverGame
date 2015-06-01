@@ -73,11 +73,17 @@ function Shoot() {
     // rotate object and toss to it's right (so it looks like it's swimming forward)
     shotClone.transform.Rotate(Vector3.forward, 90);
     shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
+    
+    // set held weapon
+    animator.SetInteger("Weapon", 2);
 }
 
 function StartSlashing() {
 	sword.isActive = true;
 	Invoke("FinishSlashing", 0.5);
+	
+	// set held weapon
+    animator.SetInteger("Weapon", 1);
 }
 
 function FinishSlashing() {
