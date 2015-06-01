@@ -68,6 +68,13 @@ function Update () {
 function Shoot() {
 	if (isDead)
 		return;
+		
+	// shot is by mouse
+	if (Input.GetButton("MouseFire1")) {
+		var mousePosition : Vector3 = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		mousePosition = mousePosition - transform.position;
+		SetShotDirection(mousePosition.x, mousePosition.y);
+	}
 
 	nextFire = Time.time + fireRate;
     var shotClone = Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
@@ -76,6 +83,7 @@ function Shoot() {
     // rotate object and toss to it's right (so it looks like it's swimming forward)
     shotClone.transform.Rotate(Vector3.forward, 90);
     shotCloneBody.AddForce(shotClone.transform.right * shotSpeed);
+    shotCloneBody.AddTorque(250);
     
     // set held weapon
     animator.SetInteger("Weapon", 2);
@@ -105,7 +113,7 @@ function FixedUpdate ()
     var v : float = Input.GetAxisRaw ("Vertical2");
 
     // Check the direction the player is facing.
-    CheckDirection (h, v);
+    SetShotDirection (h, v);
     
     // If the player has lost all it's health and the death flag hasn't been set yet...
     if(playerHealth.currentHealth <= 0 && !isDead)
@@ -115,7 +123,7 @@ function FixedUpdate ()
     }
 }
 
-function CheckDirection (h : float, v : float) {
+function SetShotDirection (h : float, v : float) {
 	// calculate angle between up and movement directions
 	// use cross product to determine angle clockwise-ness
 	var angle = Vector2.Angle(new Vector2(0, 1), new Vector2(h, v));
