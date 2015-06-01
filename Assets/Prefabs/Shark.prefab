@@ -32,7 +32,7 @@ GameObject:
   - 114: {fileID: 11427920}
   m_Layer: 0
   m_Name: Shark
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,8 +69,8 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197074}
   m_Mass: 1
-  m_LinearDrag: .0500000007
-  m_AngularDrag: .0500000007
+  m_LinearDrag: .300000012
+  m_AngularDrag: .300000012
   m_GravityScale: 0
   m_FixedAngle: 1
   m_IsKinematic: 0
@@ -145,9 +145,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414c5f427d49c4e4fad5172ffe85d87d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
   health: 0
-  startingHealth: 100
+  startingHealth: 500
   pathName: 
   pathTime: 0
 --- !u!212 &21238766
