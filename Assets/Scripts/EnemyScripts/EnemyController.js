@@ -85,7 +85,7 @@ function Patrol() {
 
 function OnTriggerStay2D(other : Collider2D) {
 	if (other.transform.tag == "Player") {
-		playerController.Damage(1 * Time.deltaTime);
+		playerController.Damage(10 * Time.deltaTime);
 	}
 }
 

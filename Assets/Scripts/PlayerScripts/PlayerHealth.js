@@ -17,6 +17,9 @@ function Heal (amount : float) {
 
 function Damage (amount : float) {
 	currentHealth -= amount;
-	if (currentHealth < 0)
+	if (currentHealth < 0) {
 		currentHealth = 0;
+		isDead = true;
+	}
+		
 }
