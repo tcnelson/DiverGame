@@ -18,13 +18,14 @@ private var chasing : boolean = false;
 
 private var myRigidBody : Rigidbody2D;
 private var spriteRenderer : SpriteRenderer;
+private var previousLoc : Vector2;
+private var velocity : Vector2;
 
 private var animator : Animator;
 
 private var timeLastHit : float;
 
 function Awake () {
-
 	score = GameObject.FindGameObjectWithTag("GameController").GetComponent(Score);
 	player = GameObject.FindGameObjectWithTag("Player");
 	playerController = player.GetComponent(PlayerController);
@@ -37,6 +38,7 @@ function Awake () {
 }
 
 function Start () {
+	previousLoc = transform.position;
 	health = startingHealth;
 	patrol = iTweenPath.GetPath(pathName);
 	Patrol();
@@ -44,6 +46,11 @@ function Start () {
 }
 
 function Update () {
+	var currentLoc = transform.position;
+	velocity = (currentLoc - previousLoc) / Time.deltaTime;
+	
+	previousLoc = currentLoc;
+
 	if (!isAlive && Time.time - timeLastHit > 10) {
 		Resurrect();
 	}
@@ -130,7 +137,7 @@ function Die() {
 }
 
 function SetAnimationState () {
-    var horizontal = myRigidBody.velocity.x;
+    var horizontal = velocity.x;
     
    	if (horizontal < 0){
    		animator.SetInteger("Direction", 1);  		
