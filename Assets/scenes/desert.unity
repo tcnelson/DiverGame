@@ -5732,7 +5732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 21256620, guid: 544b54a7873c649e9a6a581f9d828252, type: 2}
       propertyPath: m_SortingLayerID
-      value: 921238849
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 544b54a7873c649e9a6a581f9d828252, type: 2}
@@ -21583,7 +21583,7 @@ MonoBehaviour:
   spawnTime: 4
   spawns: {fileID: 1426683638}
   container: {fileID: 157898449}
-  maxCount: 6
+  maxCount: 10
   pathName: 
 --- !u!1 &1809494809
 GameObject:

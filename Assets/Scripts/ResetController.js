@@ -13,6 +13,10 @@ function Start() {
 }
 
 function Update () {
+	if (Input.GetButton("Cancel")) {
+		Application.Quit();
+	}
+	
 	if (!playerHealth.isDead) {
 		return;
 	}
@@ -22,8 +26,4 @@ function Update () {
 	if (Input.GetButton("Submit")) {
 		Application.LoadLevel(0);
 	}
-	else if (Input.GetButton("Cancel")) {
-		Application.Quit();
-	}
-	
 }
