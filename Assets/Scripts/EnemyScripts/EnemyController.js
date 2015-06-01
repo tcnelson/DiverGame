@@ -3,6 +3,7 @@
 var speed : int;
 var health : float;
 var startingHealth : float = 100f;
+var isAlive : boolean = true;
 
 var pathName : String;
 var pathTime : float;
@@ -19,6 +20,8 @@ private var myRigidBody : Rigidbody2D;
 private var spriteRenderer : SpriteRenderer;
 
 private var animator : Animator;
+
+private var timeLastHit : float;
 
 function Awake () {
 
@@ -41,6 +44,13 @@ function Start () {
 }
 
 function Update () {
+	if (!isAlive && Time.time - timeLastHit > 10) {
+		Resurrect();
+	}
+	else if (!isAlive) {
+		return;
+	}
+
 
     if(enemySight.playerInSight && !chasing) {
 		// If the player is in sight and is alive...
@@ -66,6 +76,9 @@ function Update () {
 }
 
 function Chase () {
+	if (!isAlive)
+		return;
+
 	var distance : Vector2 = (player.transform.position - transform.position);
     myRigidBody.AddForce(distance * speed);
 }
@@ -83,21 +96,37 @@ function Patrol() {
 	iTween.MoveTo(gameObject, iTween.Hash("path", patrol, "time", pathTime, "easeType", "easeInOutSine", "loopType", "pingPong", "delay", .1));
 }
 
+function Resurrect() {
+	health = startingHealth;
+	isAlive = true;
+	spriteRenderer.color = Color(1f, 1f, 1f, 1f);
+}
+
 function OnTriggerStay2D(other : Collider2D) {
+	if (!isAlive)
+		return;
+
 	if (other.transform.tag == "Player") {
 		playerController.Damage(10 * Time.deltaTime);
 	}
 }
 
 function Damage(amount : float) {
+	if (!isAlive)
+		return;
+
+	timeLastHit = Time.time;
+	
 	health -= amount;
 	if (health < 0)
 		Die();
 }
 
 function Die() {
+	isAlive = false;
+	spriteRenderer.color = Color(1f, 1f, 1f, 0f);
+	
 	score.Add(150);
-	Destroy(gameObject);
 }
 
 function SetAnimationState () {
@@ -109,7 +138,6 @@ function SetAnimationState () {
  	else {
  		animator.SetInteger("Direction", 0);
  	}
- 	
 }
     
     
