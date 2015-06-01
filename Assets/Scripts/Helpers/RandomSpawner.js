@@ -7,6 +7,8 @@ var spawns : GameObject;
 var container : Transform;
 var maxCount : int = 1;
 
+var pathName : String;
+
 private var spawnPoints : Transform[]; 		// An array of the spawn points this oxygen can spawn from.
 
 function Awake() {
@@ -38,4 +40,9 @@ function Spawn ()
     // Create an instance of the prefab at the randomly selected spawn point's position and rotation.
     var clone = Instantiate (prefab, parent.position, parent.rotation);
     clone.transform.parent = container;
+    
+    if (pathName) {
+    	var enemyController = clone.gameObject.GetComponent(EnemyController);
+    	enemyController.pathName = pathName;
+    }
 }
