@@ -109,15 +109,6 @@ function Resurrect() {
 	spriteRenderer.color = Color(1f, 1f, 1f, 1f);
 }
 
-function OnTriggerStay2D(other : Collider2D) {
-	if (!isAlive)
-		return;
-
-	if (other.transform.tag == "Player") {
-		playerController.Damage(10 * Time.deltaTime);
-	}
-}
-
 function Damage(amount : float) {
 	if (!isAlive)
 		return;

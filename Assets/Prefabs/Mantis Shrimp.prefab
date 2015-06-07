@@ -37,6 +37,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &193206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 462296}
+  - 61: {fileID: 6198228}
+  - 114: {fileID: 11496224}
+  m_Layer: 0
+  m_Name: Claws
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &462296
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 497580}
+  m_RootOrder: 1
 --- !u!4 &481308
 Transform:
   m_ObjectHideFlags: 1
@@ -56,10 +85,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 140566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2575, y: -430, z: 0}
+  m_LocalPosition: {x: 2288.41846, y: -1885.95789, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children:
   - {fileID: 481308}
+  - {fileID: 462296}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5044714
@@ -103,6 +133,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!61 &6198228
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193206}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .210449219, y: -.023154296}
+  serializedVersion: 2
+  m_Size: {x: .23395507, y: .271750063}
 --- !u!95 &9503660
 Animator:
   serializedVersion: 3
@@ -148,8 +191,20 @@ MonoBehaviour:
   speed: 1
   health: 0
   startingHealth: 100
+  isAlive: 1
   pathName: 
   pathTime: 0
+--- !u!114 &11496224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bd7967862135548b55933e59790ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21204984
 SpriteRenderer:
   m_ObjectHideFlags: 1
