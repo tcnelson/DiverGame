@@ -51,6 +51,7 @@ function Update () {
 	
 	previousLoc = currentLoc;
 
+	// death logic
 	if (!isAlive && Time.time - timeLastHit > 10) {
 		Resurrect();
 	}
@@ -58,7 +59,7 @@ function Update () {
 		return;
 	}
 
-
+	// live logic
     if(enemySight.playerInSight && !chasing) {
 		// If the player is in sight and is alive...
 		// Start Chasing!
@@ -123,6 +124,9 @@ function Damage(amount : float) {
 function Die() {
 	isAlive = false;
 	spriteRenderer.color = Color(1f, 1f, 1f, 0f);
+
+	// move to start position	
+	transform.position = patrol[0];
 	
 	score.Add(150);
 }

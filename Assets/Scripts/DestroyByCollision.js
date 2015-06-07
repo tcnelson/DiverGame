@@ -18,8 +18,11 @@ function OnTriggerEnter2D(hit : Collider2D){
 	}
 	else if (hit.transform.tag == "Enemy") {
 		var enemyController = hit.GetComponent(EnemyController);
-		enemyController.Damage(damage);
-		Destroy(gameObject);							// Destroy shot on collision with enemy
+		
+		if (enemyController.isAlive){
+			enemyController.Damage(damage);
+			Destroy(gameObject);						// Destroy shot on collision with enemy
+		}
 	}
 	else if (hit.transform.tag == "Environment") {
 		Destroy(gameObject);							// Destroy shot on collision with other game object
