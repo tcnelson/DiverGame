@@ -23,3 +23,7 @@ function Damage (amount : float) {
 	}
 		
 }
+
+function Die() {
+	currentHealth = 0;
+}

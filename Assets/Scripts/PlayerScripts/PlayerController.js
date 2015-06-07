@@ -226,7 +226,9 @@ function Die ()
 {
 	if (isDead)
 		return;
-		
+	
+	playerHealth.Die();
+	
     // Set the death flag so this function won't be called again.
     isDead = true;
     animator.SetBool("IsAlive", false);
