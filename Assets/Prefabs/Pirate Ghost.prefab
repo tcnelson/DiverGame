@@ -39,6 +39,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &196722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 484902}
+  - 61: {fileID: 6128066}
+  - 114: {fileID: 11414906}
+  m_Layer: 10
+  m_Name: GhostlyWeapons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &468450
 Transform:
   m_ObjectHideFlags: 1
@@ -46,10 +63,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 183746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 500, y: -450, z: 0}
+  m_LocalPosition: {x: 2315.3606, y: -1877.11743, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 1}
   m_Children:
   - {fileID: 475954}
+  - {fileID: 484902}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &475954
@@ -64,6 +82,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 468450}
   m_RootOrder: 0
+--- !u!4 &484902
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196722}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 468450}
+  m_RootOrder: 1
 --- !u!50 &5079598
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -92,6 +122,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.5
+--- !u!61 &6128066
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196722}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: .00631591771, y: -.0505126938}
+  serializedVersion: 2
+  m_Size: {x: .263251454, y: .250707775}
 --- !u!61 &6132524
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -191,6 +234,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11414906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52bd7967862135548b55933e59790ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11418402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,6 +285,7 @@ MonoBehaviour:
   speed: 1
   health: 0
   startingHealth: 100
+  isAlive: 1
   pathName: Ghost Ship Path 1
   pathTime: 30
 --- !u!212 &21211888
