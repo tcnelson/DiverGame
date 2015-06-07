@@ -14,7 +14,8 @@ private var playerRigidbody : Rigidbody2D;      // Reference to the player's rig
 
 private var isDead : boolean;                   // Whether the player is dead.
 private var damaged : boolean;                  // True when the player gets damaged.
-private var playerHealth : PlayerHealth;		// Reference to player health
+private var playerHealth : PlayerHealth;		// Reference to player health\
+private var dangerSign : DangerSign;			// Reference to danger notification controller
 
 private var directionFacing : Vector2;			// The direction the player is facing
 private var animator : Animator;				// The animator attached to the player
@@ -30,6 +31,7 @@ function Awake() {
 	playerRigidbody = GetComponent (Rigidbody2D);
 	animator = GetComponent (Animator);
 	playerHealth = GameObject.FindGameObjectWithTag("GameController").GetComponent(PlayerHealth);
+	dangerSign = GameObject.FindGameObjectWithTag("Danger Sign").GetComponent(DangerSign);
 	
 	// audio
 	swordSound = GameObject.FindWithTag("Sword").GetComponent(AudioSource);
@@ -217,6 +219,9 @@ public function Damage (amount : float)
 
     // Reduce the current health by the damage amount.
     playerHealth.Damage(amount);
+
+	// Warn the player!
+	dangerSign.Show();
 
     // Play the hurt sound effect.
     //playerAudio.Play ();

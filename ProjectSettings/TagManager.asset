@@ -19,6 +19,7 @@ TagManager:
   - Sword
   - Gun
   - Static
+  - Danger Sign
   layers:
   - Default
   - TransparentFX
